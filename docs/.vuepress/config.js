@@ -27,29 +27,29 @@ module.exports = {
             {
                 text: 'Plugins',
                 link: '/plugins/',
-                items: [
-                    {
-                        text: 'KickCleanhead',
-                        link: '/plugins/kickcleanhead'
-                    },
-                    {
-                        text: 'KickGDPR',
-                        link: '/plugins/kickgdpr'
-                    }
-                ]
+                // items: [
+                //     {
+                //         text: 'KickCleanhead',
+                //         link: '/plugins/kickcleanhead/'
+                //     },
+                //     {
+                //         text: 'KickGDPR',
+                //         link: '/plugins/kickgdpr/'
+                //     }
+                // ]
             },
             {
                 text: 'Komponenten',
                 link: '/komponenten/',
-                items: [
-                    {
-                        text: 'KickGDPRChecker',
-                        link: '/komponenten/kickgpdrchecker'
-                    }
-                ]
+                // items: [
+                //     {
+                //         text: 'KickGDPRChecker',
+                //         link: '/komponenten/kickgpdrchecker'
+                //     }
+                // ]
             },
             {
-                text: 'Shop',
+                text: 'Onlineshop',
                 link: 'https://kicktemp.shop'
             },
             {
