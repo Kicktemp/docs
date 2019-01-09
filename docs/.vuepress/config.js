@@ -28,12 +28,33 @@ module.exports = {
                 text: 'Plugins',
                 link: '/plugins/',
                 items: [
-                    {text: 'KickCleanhead', link: '/plugins/kickcleanhead'}
+                    {
+                        text: 'KickCleanhead',
+                        link: '/plugins/kickcleanhead'
+                    },
+                    {
+                        text: 'KickGDPR',
+                        link: '/plugins/kickgdpr'
+                    }
+                ]
+            },
+            {
+                text: 'Komponenten',
+                link: '/komponenten/',
+                items: [
+                    {
+                        text: 'KickGDPRChecker',
+                        link: '/komponenten/kickgpdrchecker'
+                    }
                 ]
             },
             {
                 text: 'Shop',
                 link: 'https://kicktemp.shop'
+            },
+            {
+                text: 'Support',
+                link: 'https://support.kicktemp.com'
             }
         ],
         codeLanguages: {
