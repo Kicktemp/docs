@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-809e00b6","path":"/yootheme/contactssource.html","title":"","lang":"de-DE","frontmatter":{},"headers":[],"git":{"updatedTime":1680125065000,"contributors":[{"name":"Niels Nübel","email":"niels@kicktemp.com","commits":1}]},"filePathRelative":"yootheme/contactssource.md"}');export{e as data};

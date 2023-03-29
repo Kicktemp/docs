@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a898f8e8","path":"/yootheme/rapidmail.html","title":"","lang":"de-DE","frontmatter":{},"headers":[],"git":{"updatedTime":1680125065000,"contributors":[{"name":"Niels Nübel","email":"niels@kicktemp.com","commits":1}]},"filePathRelative":"yootheme/rapidmail.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7d70b4ca","path":"/yootheme/opengraph.html","title":"","lang":"de-DE","frontmatter":{},"headers":[],"git":{"updatedTime":1680125065000,"contributors":[{"name":"Niels Nübel","email":"niels@kicktemp.com","commits":1}]},"filePathRelative":"yootheme/opengraph.md"}');export{e as data};

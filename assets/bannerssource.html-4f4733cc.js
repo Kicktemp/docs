@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d6dce06","path":"/yootheme/bannerssource.html","title":"Kick YOOtheme Pro Banner Source","lang":"de-DE","frontmatter":{},"headers":[],"git":{"updatedTime":1680125065000,"contributors":[{"name":"Niels Nübel","email":"niels@kicktemp.com","commits":1}]},"filePathRelative":"yootheme/bannerssource.md"}');export{e as data};

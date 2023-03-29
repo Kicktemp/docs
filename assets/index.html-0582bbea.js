@@ -1,0 +1,1 @@
+import{_ as e,p as t,q as c,R as n}from"./framework-5866ffd3.js";const o={},_=n("p",null,"#Hello Kicktemp",-1),s=[_];function l(r,a){return t(),c("div",null,s)}const d=e(o,[["render",l],["__file","index.html.vue"]]);export{d as default};

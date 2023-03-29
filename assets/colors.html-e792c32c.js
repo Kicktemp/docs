@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-071558ba","path":"/yootheme/colors.html","title":"Kick YOOtheme Pro Colors","lang":"de-DE","frontmatter":{},"headers":[],"git":{"updatedTime":1680125065000,"contributors":[{"name":"Niels Nübel","email":"niels@kicktemp.com","commits":1}]},"filePathRelative":"yootheme/colors.md"}');export{e as data};
