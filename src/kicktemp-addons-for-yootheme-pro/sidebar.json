@@ -1,0 +1,19 @@
+[
+    {
+        "text": "Getting Started",
+        "items": [
+            {
+                "text": "Introduction",
+                "link": "/kicktemp-addons-for-yootheme-pro/"
+            },
+            {
+                "text": "Installation",
+                "link": "/kicktemp-addons-for-yootheme-pro/installation"
+            },
+            {
+                "text": "Update",
+                "link": "/kicktemp-addons-for-yootheme-pro/update"
+            }
+        ]
+    }
+]
