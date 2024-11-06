@@ -3,7 +3,7 @@
         "text": "Getting Started",
         "items": [
             {
-                "text": "Überlick",
+                "text": "Überblick",
                 "link": "/kicktemp-addons-for-yootheme-pro/"
             },
             {
@@ -21,16 +21,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/bannersource",
         "items": [
             {
-                "text": "Überlick",
-                "link": "/"
+                "text": "Überblick",
+                "link": "/überblick"
             },
             {
                 "text": "Integration",
-                "link": "/"
+                "link": "/integration"
             },
             {
                 "text": "Filteroptionen",
-                "link": "/"
+                "link": "/filteroptions"
             }
         ]
     },
@@ -39,8 +39,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/brevo",
         "items": [
             {
-                "text": "Überlick",
+                "text": "Überblick",
                 "link": "/"
+            },
+            {
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -49,12 +57,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/colors",
         "items": [
             {
-                "text": "Überlick",
+                "text": "Überblick",
                 "link": "/"
             },
             {
                 "text": "Video",
-                "link": "/Video"
+                "link": "/video"
             }
         ]
     },
@@ -63,12 +71,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/contactsource",
         "items": [
             {
-                "text": "Überlick",
+                "text": "Überblick",
                 "link": "/"
             },
             {
-                "text": "Video",
-                "link": "/Video"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },

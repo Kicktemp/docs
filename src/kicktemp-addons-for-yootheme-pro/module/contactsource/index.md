@@ -1,5 +1,3 @@
-## Kontakte (Source)
+# Überblick
 
-Mit dem Kick YOOAddons Modul "Kontakte", kannst du Kontakte, die in der Joomla Kontakt Komponente gepflegt wurden, per dynamischen Inhalt in die YOOtheme Pro Layouts einbinden.
-Template anlegen welches auf Kategoriebasis Kategorieebene Custom Source Costum Contacs (Source)
-
+Mit dem Kick YOOAddons Modul "Kontakte", kannst du Kontakte aus der Joomla Kontakt Komponente als dynamische Quelle in die YOOtheme Pro Layouts einbinden. Standardmässig ist es nicht möglich ein Template für Kategorien anzulegen und Kontakte aus einer Kategorie anzeigen zu lassen. Mit unserem Addon kann dies umgesetzt werden und auf Daten der, in der Kontakt Komponente gepflegten, Kontakte dynamisch zugreifen.
