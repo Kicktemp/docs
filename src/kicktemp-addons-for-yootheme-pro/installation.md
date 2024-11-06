@@ -1,6 +1,6 @@
 # Installation
 
-Lade das [Essentials für YOOtheme Pro](https://www.zoolanders.com/downloads) Plugin herunter und installiere es, indem du den offiziellen [Joomla-Erweiterung-Installationsanweisungen](https://docs.joomla.org/Installing_an_extension) oder den [WordPress-Plugin-Installationsanweisungen](https://wordpress.org/support/article/managing-plugins/#installing-plugins-1) folgst. Nach einer erfolgreichen Installation sollte ein Plugin namens **Essentials YOOtheme Pro** (auch bekannt als `yooessentials`) aufgelistet und aktiviert sein.
+Melde dich im Shop an (https://kicktemp.shop/login) und lade das [Kick YOOaddons für YOOtheme Pro](https://kicktemp.shop/download/kick-yootheme-pro-files/latest) Plugin herunter. Installiere das Plugin, indem du den offiziellen [Joomla-Erweiterung-Installationsanweisungen](https://docs.joomla.org/Installing_an_extension) folgst. Nach einer erfolgreichen Installation sollte ein Plugin mit dem Namen **Kick YOOaddons** aufgelistet und aktiviert sein.
 
 ::: tip Installationsordner
 Das Plugin wird unter `plugins/system/yooessentials` für Joomla und im Verzeichnis `wp-contents/plugins/yooessentials` für WordPress installiert.
