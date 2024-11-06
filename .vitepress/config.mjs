@@ -5,12 +5,20 @@ import Sidebar from './sidebar';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'Kicktemp',
-    description: 'Guides and Documentation for Essential Addons.',
+    description: 'Anleitungen und Dokumentationen für Kicktemp.shop Erweiterungen.',
     srcDir: 'src',
     outDir: 'dist',
     cleanUrls: true,
     srcExclude: ['**/_partials/*.md'],
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.png' }],
+    ],
+    sitemap: {
+        hostname: 'https://docs.kicktemp.com',
+    },
     themeConfig: {
+        logo: '/kicktemp_horiz.svg',
+        siteTitle: false,
         editLink: {
             pattern: 'https://github.com/kicktemp/docs/edit/main/src/:path',
         },
@@ -26,11 +34,15 @@ export default defineConfig({
                 icon: 'youtube',
                 link: 'https://youtube.com/@kicktemp',
             },
+            {
+                icon: 'discord',
+                link: 'https://discord.gg/fC45UbMQdg',
+            },
         ],
         footer: {
             //message: 'Essentials for YOOtheme Pro and ZOO',
             copyright:
-                'Copyright © <a href="https://kicktemp.shop" target="_blank">Kicktemp Shop</a>',
+                'Copyright © 2024 <a href="https://kicktemp.shop" target="_blank">Kicktemp GmbH</a>',
         },
     },
 });
