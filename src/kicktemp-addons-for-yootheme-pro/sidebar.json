@@ -3,7 +3,7 @@
         "text": "Getting Started",
         "items": [
             {
-                "text": "Introduction",
+                "text": "Überlick",
                 "link": "/kicktemp-addons-for-yootheme-pro/"
             },
             {
@@ -13,6 +13,230 @@
             {
                 "text": "Update",
                 "link": "/kicktemp-addons-for-yootheme-pro/update"
+            }
+        ]
+    },
+    {
+        "text": "Banner (Source)",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/bannersource",
+        "items": [
+            {
+                "text": "Überlick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Brevo",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/brevo",
+        "items": [
+            {
+                "text": "Überlick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Farben",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/colors",
+        "items": [
+            {
+                "text": "Überlick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "ContactSource",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/contactsource",
+        "items": [
+            {
+                "text": "Überlick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Elemente",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/elemente",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "FavecSource",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/favedsource",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Dateien",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/files",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Form",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/form",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Hubspot",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/hubspot",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Jsonld",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/jsonld",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Loom HQ",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/loomhq",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Navigator",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/navigator",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Opengraph",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/opengraph",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Popup Image",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/popupimage",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Rapidmail",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/rapidmail",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
+            }
+        ]
+    },
+    {
+        "text": "Sidebar",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/sidebar",
+        "items": [
+            {
+                "text": "Überblick",
+                "link": "/"
+            },
+            {
+                "text": "Video",
+                "link": "/Video"
             }
         ]
     }
