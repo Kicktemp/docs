@@ -1,6 +1,7 @@
 # Farben
 
-Das Addon "Farben" erweitert die Styleoptionen um die folgenden Optionen Tetiary, Quaternary, Quinary und Senary. Diese Optionen stehen in folgenden Elementen zur Verfügung:
+Das Addon Farben erweitert die standard Styleoptionen um 4 weitere Farben. Nach der Installation stehen dir folgende Styleoptionen zusätzlich zur Verfügung Tertiary, Quaternary, Quinary und Senar. So hast du mehr Möglichkeiten und Flexibilität bei der Gestaltung deiner Webseite.
+Diese Optionen können für folgende Elemente genutzt werden:
 
 | Elemente         |
 |------------------|
