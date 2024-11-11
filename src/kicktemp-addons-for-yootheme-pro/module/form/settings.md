@@ -33,159 +33,159 @@ Im Folgenden werden alle Einstellungsmöglichkeiten erklärt.
 
 Hier werden kurz die verschiedenen Arten von Feldtypen erklärt.
 
-| Feldtyp     | Description                                                                        |
-|-------------|------------------------------------------------------------------------------------|
-| Eingabefeld | Reines Text-Eingabefeld für z.B. Namen                                             |
-| Textarea    | Textfeld für längere Texte. Angabe individueller Zeilennenge möglich.              |
-| Auswählen   | Über den Punkt Optionen können verschiedene Auswahlmöglichkeiten angegeben werden. |
-| E-Mail      | Dieses Feld ist für E-Mailadressen vorgesehen. Der Eintrag muss ein @ beinhalten.  |
-| Datum       | Datumsfeld. Es gibt die Möglichkeit das Datum über einen Kalender einzutragen.     |
-| Versteckt   | Dieses Feld ist nicht sichtbar. Es dient z.B. Vorbelegung bzw. Vorauswahl.         |
-| Radio       | Anklickauswahl                                                                     |
-| Checkbox    | Abhaken                                                                            |
-| Text        | Feld füt Text zwischen den Formularfeldern                                         |
-| Datei       | Feld um Dateien hochladen zu können.                                               |
-| Honeypot    | Feld für Spamprotection.                                                           |
-| Captcha     |
+| Feldtyp     | Description                                                                        | Dynamic  |
+|-------------|------------------------------------------------------------------------------------|:--------:|
+| Eingabefeld | Reines Text-Eingabefeld für z.B. Namen                                             | &#x2713; |
+| Textarea    | Textfeld für längere Texte. Angabe individueller Zeilennenge möglich.              | &#x2713; |
+| Auswählen   | Über den Punkt Optionen können verschiedene Auswahlmöglichkeiten angegeben werden. | &#x2713; |
+| E-Mail      | Dieses Feld ist für E-Mailadressen vorgesehen. Der Eintrag muss ein @ beinhalten.  | &#x2713; |
+| Datum       | Datumsfeld. Es gibt die Möglichkeit das Datum über einen Kalender einzutragen.     | &#x2713; |
+| Versteckt   | Dieses Feld ist nicht sichtbar. Es dient z.B. Vorbelegung bzw. Vorauswahl.         | &#x2713; |
+| Radio       | Anklickauswahl                                                                     | &#x2713; |
+| Checkbox    | Abhaken                                                                            | &#x2713; |
+| Text        | Feld füt Text zwischen den Formularfeldern                                         | &#x2713; |
+| Datei       | Feld um Dateien hochladen zu können.                                               | &#x2713; |
+| Honeypot    | Feld für Spamprotection.                                                           | &#x2713; |
+| Captcha     |                                                                                    | &#x2713; |
 
 ## Settings der Feldtypen
 
 **Eingabe**
 
-| Setting                           | Description                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Name                              | Name des Formulares                                                          |
-| Label                             | Titel des Formularfeldes                                                     |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                |
-| Wert                              | Vorauswahl                                                                   |
-| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          |
+| Setting                           | Description                                                                  | Dynamic  |
+|-----------------------------------|------------------------------------------------------------------------------|:--------:|
+| Name                              | Name des Formularfeldes                                                      | &#x2713; |
+| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
+| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
+| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
+| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
+| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
+| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
+| Wert                              | Vorauswahl                                                                   | &#x2713; |
+| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          | &#x2713; |
 
 **Textarea**
 
-| Setting                           | Description                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Name                              | Name des Formulares                                                          |
-| Label                             | Titel des Formularfeldes                                                     |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   |
-| Größe                             | Eintragbaren Zeilenmenge im Feld                                             |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                |
-| Wert                              | Vorauswahl                                                                   |
+| Setting                           | Description                                                                  | Dynamic  |
+|-----------------------------------|------------------------------------------------------------------------------|:--------:|
+| Name                              | Name des Formularfeldes                                                      | &#x2713; |
+| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
+| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
+| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
+| Größe                             | Eintragbaren Zeilenmenge im Feld                                             | &#x2713; |
+| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
+| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
+| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
+| Wert                              | Vorauswahl                                                                   | &#x2713; |
 
 **Auswahl**
 
-| Setting                           | Description                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Name                              | Name des Formulares                                                          |
-| Label                             | Titel des Formularfeldes                                                     |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   |
-| Option                            | Hier werden die Auswahloptionen eingetragen                                  |
-| Multiple                          | Mehrfachauswahl ermöglichen                                                  |
-| Autofocus                         | ?                                                                            |
-| Größe                             | Eintragbaren Zeilenmenge im Feld                                             |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                |
-| Wert                              | Vorauswahl                                                                   |
+| Setting                           | Description                                                                  | Dynamic  |
+|-----------------------------------|------------------------------------------------------------------------------|:--------:|
+| Name                              | Name des Formularfeldes                                                      | &#x2713; |
+| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
+| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
+| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
+| Option                            | Hier werden die Auswahloptionen eingetragen                                  | &#x2713; |
+| Multiple                          | Mehrfachauswahl ermöglichen                                                  | &#x2713; |
+| Autofocus                         | ?                                                                            | &#x2713; |
+| Größe                             | Eintragbaren Zeilenmenge im Feld                                             | &#x2713; |
+| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
+| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
+| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
+| Wert                              | Vorauswahl                                                                   | &#x2713; |
 
 **E-mail**
 
-| Setting                           | Description                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Name                              | Name des Formulares                                                          |
-| Label                             | Titel des Formularfeldes                                                     |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    |
-| Fehler E-Mail-Nachricht           | ?                                                                            |
-| Wert                              | Vorauswahl                                                                   |
+| Setting                           | Description                                                                  | Dynamic  |
+|-----------------------------------|------------------------------------------------------------------------------|:--------:|
+| Name                              | Name des Formularfeldes                                                      | &#x2713; |
+| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
+| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
+| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
+| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
+| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
+| Fehler E-Mail-Nachricht           | ?                                                                            | &#x2713; |
+| Wert                              | Vorauswahl                                                                   | &#x2713; |
 
 **Datum**
 
-| Setting                           | Description                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Name                              | Name des Formulares                                                          |
-| Label                             | Titel des Formularfeldes                                                     |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   |
-| min                               | Datumswert darf nicht kleiner sein als der angegebene min. Wert              |
-| max                               | Datumswert darf nicht größer sein als der angegebene max. Wert               |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                |
-| Wert                              | Vorauswahl                                                                   |
-| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          |
+| Setting                           | Description                                                                  | Dynamic  |
+|-----------------------------------|------------------------------------------------------------------------------|:--------:|
+| Name                              | Name des Formularfeldes                                                      | &#x2713; |
+| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
+| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
+| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
+| min                               | Datumswert darf nicht kleiner sein als der angegebene min. Wert              | &#x2713; |
+| max                               | Datumswert darf nicht größer sein als der angegebene max. Wert               | &#x2713; |
+| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
+| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
+| Wert                              | Vorauswahl                                                                   | &#x2713; |
+| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          | &#x2713; |
 
 **Versteckt**
 
-| Setting | Description         |
-|---------|---------------------|
-| Name    | Name des Formulares |
-| Wert    | Vorauswahl          |
+| Setting | Description             | Dynamic  |
+|---------|-------------------------|:--------:|
+| Name    | Name des Formularfeldes | &#x2713; |
+| Wert    | Vorauswahl              | &#x2713; |
 
 **Radio**
 
-| Setting          | Description                                                                    |
-|------------------|--------------------------------------------------------------------------------|
-| Name             | Name des Formulares                                                            |
-| Label            | Titel des Formularfeldes                                                       |
-| Label anzeigen   | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden   |
-| Placeholder      | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.     |
-| Optionen         | Hier werden die Auswahloptionen hinzugefügt                                    |
-| Option pro Zeile | Die Auswahloptionen werden pro Zeile angezeigt                                 |
-| Erforderlich     | Ist das Feld ein Pflichtfeld                                                   |
-| Fehlermeldung    | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist      |
-| Equal            | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                  |
-| Wert             | Vorauswahl                                                                     |
+| Setting          | Description                                                                    | Dynamic  |
+|------------------|--------------------------------------------------------------------------------|:--------:|
+| Name             | Name des Formularfeldes                                                        | &#x2713; |
+| Label            | Titel des Formularfeldes                                                       | &#x2713; |
+| Label anzeigen   | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden   | &#x2713; |
+| Placeholder      | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.     | &#x2713; |
+| Optionen         | Hier werden die Auswahloptionen hinzugefügt                                    |          |
+| Option pro Zeile | Die Auswahloptionen werden pro Zeile angezeigt                                 | &#x2713; |
+| Erforderlich     | Ist das Feld ein Pflichtfeld                                                   | &#x2713; |
+| Fehlermeldung    | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist      | &#x2713; |
+| Equal            | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                  | &#x2713; |
+| Wert             | Vorauswahl                                                                     | &#x2713; |
 
 **Checkbox**
 
-| Setting       | Description                                                               |
-|---------------|---------------------------------------------------------------------------|
-| Name          | Name des Formulares                                                       |
-| Erforderlich  | Ist das Feld ein Pflichtfeld                                              |
-| Fehlermeldung | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist |
-| Equal         | Name des Feldes mit dem das Formularfeld übereinstimmen muss.             |
-| Wert          | Vorauswahl                                                                |
-| Inhalt        | Text der Checkbox                                                         |
+| Setting       | Description                                                               | Dynamic  |
+|---------------|---------------------------------------------------------------------------|:--------:|
+| Name          | Name des Formularfeldes                                                   | &#x2713; |
+| Erforderlich  | Ist das Feld ein Pflichtfeld                                              | &#x2713; |
+| Fehlermeldung | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist | &#x2713; |
+| Equal         | Name des Feldes mit dem das Formularfeld übereinstimmen muss.             | &#x2713; |
+| Wert          | Vorauswahl                                                                | &#x2713; |
+| Inhalt        | Text der Checkbox                                                         | &#x2713; |
 
 **Text**
 
-| Setting       | Description            |
-|---------------|------------------------|
-| Name          | Name des Formulares    |
-| Inhalt        | Text anzuzeigende Text |
+| Setting       | Description              | Dynamic  |
+|---------------|--------------------------|:--------:|
+| Name          | Name des Formularfeldes  | &#x2713; |
+| Inhalt        | Text anzuzeigende Text   | &#x2713; |
 
 **Datei**
 
-| Setting       | Description                                                                                               |
-|---------------|-----------------------------------------------------------------------------------------------------------|
-| Name          | Name des Formulares                                                                                       |
-| Label         | Titel des Formularfeldes                                                                                  |
-| Placeholder   | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.                                |
-| Multiple      | Mehrfachauswahl ermöglichen                                                                               |
-| Accept        | Zeichenkette, die definiert, welche Dateitypen die Dateieingabe akzeptieren soll                          |
-| Capture       | Zeichenkette, die angibt, welche Kamera für die Erfassung von Bild- oder Videodaten verwendet werden soll |
-| Erforderlich  | Ist das Feld ein Pflichtfeld                                                                              |
+| Setting       | Description                                                                                               | Dynamic  |
+|---------------|-----------------------------------------------------------------------------------------------------------|:--------:|
+| Name          | Name des Formularfeldes                                                                                   | &#x2713; |
+| Label         | Titel des Formularfeldes                                                                                  | &#x2713; |
+| Placeholder   | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.                                | &#x2713; |
+| Multiple      | Mehrfachauswahl ermöglichen                                                                               | &#x2713; |
+| Accept        | Zeichenkette, die definiert, welche Dateitypen die Dateieingabe akzeptieren soll                          | &#x2713; |
+| Capture       | Zeichenkette, die angibt, welche Kamera für die Erfassung von Bild- oder Videodaten verwendet werden soll | &#x2713; |
+| Erforderlich  | Ist das Feld ein Pflichtfeld                                                                              | &#x2713; |
 
 **Honeypot**
 
-| Setting                         | Description                                                                                               |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Name                            | Name des Formulares                                                                                       |
+| Setting                         | Description                                                                                               | Dynamic  |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------|:--------:|
+| Name                            | Name des Formularfeldes                                                                                   | &#x2713; |
 | min. Sekunden                   | Jede Eingabe die innerhalb der angegeben Zeit getätigt wird, wird als invalide eingestuft                 |
 | Honeypot Feld Gefüllt Nachricht | Angezeigte Fehlermeldung, wenn das Honeypotfeld ausgefüllt wurde                                          |
 | min. Sekunden für Nachricht     | Angezeigte Fehlermeldung, wenn das Formular zu schnell ausgefüllt und abgeschickt wird.                   |
 
 **Captcha**
 
-| Setting       | Description            |
-|---------------|------------------------|
-| Name          | Name des Formulares    |
+| Setting       | Description              | Dynamic  |
+|---------------|--------------------------|:--------:|
+| Name          | Name des Formularfeldes  | &#x2713; |
