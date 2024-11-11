@@ -3,7 +3,7 @@
         "text": "Getting Started",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/kicktemp-addons-for-yootheme-pro/"
             },
             {
@@ -21,7 +21,7 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/bannersource",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
@@ -29,7 +29,7 @@
                 "link": "/integration"
             },
             {
-                "text": "Filteroptionen",
+                "text": "Filteroptions",
                 "link": "/filteroptions"
             },
             {
@@ -43,7 +43,7 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/brevo",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
@@ -61,21 +61,7 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/colors",
         "items": [
             {
-                "text": "Überblick",
-                "link": "/"
-            },
-            {
-                "text": "",
-                "link": "/"
-            }
-        ]
-    },
-    {
-        "text": "ContactSource",
-        "base": "/kicktemp-addons-for-yootheme-pro/module/contactsource",
-        "items": [
-            {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
@@ -85,16 +71,38 @@
         ]
     },
     {
+        "text": "ContactSource",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/contactsource",
+        "items": [
+            {
+                "text": "Overview",
+                "link": "/"
+            },
+            {
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Functions",
+                "link": "/functions"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
+            }
+        ]
+    },
+    {
         "text": "Elemente",
         "base": "/kicktemp-addons-for-yootheme-pro/module/elemente",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -103,12 +111,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/favedsource",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -117,12 +125,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/files",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -131,12 +143,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/form",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -145,12 +161,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/hubspot",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -159,12 +179,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/jsonld",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -173,12 +193,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/loomhq",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -187,12 +211,16 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/navigator",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -201,12 +229,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/opengraph",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -215,12 +243,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/popupimage",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -229,12 +257,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/rapidmail",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     },
@@ -243,12 +271,12 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/sidebar",
         "items": [
             {
-                "text": "Überblick",
+                "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "",
-                "link": "/"
+                "text": "Integration",
+                "link": "/integration"
             }
         ]
     }
