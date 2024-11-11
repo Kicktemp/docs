@@ -31,6 +31,10 @@
             {
                 "text": "Filteroptionen",
                 "link": "/filteroptions"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },

@@ -1,4 +1,4 @@
-# Filteroptions
+ # Filteroptions
 
 Ist der Menüpunkt "benutzerdefinierte Banner" als Quelle für dynamische Inhalte ausgewählt bestehen folgende Filteroptionen:
 
