@@ -4,8 +4,6 @@
 
 Das Addon Farben erweitert die standard Styleoptionen um 4 weitere Farben. Nach der Installation stehen dir folgende Styleoptionen zusätzlich zur Verfügung Tertiary, Quaternary, Quinary und Senar.
 
-![chrome-capture-2024-11-11.png](assets/chrome-capture-2024-11-11.png)
-
 So hast du mehr Möglichkeiten und Flexibilität bei der Gestaltung deiner Webseite.
 Diese Optionen können für folgende Elemente genutzt werden:
 
