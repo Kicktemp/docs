@@ -8,9 +8,9 @@ Im Folgenden werden alle Einstellungsmöglichkeiten kurz erklärt.
 
 | Setting               | Description                                                                                                                                      | Bereichsvariablen           |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Folders               | Auswahl der verfügbaren Listen, zu welcher neue User hinzugefügt werden                                                                          | Bervo Listen                |
+| Ordner                | Auswahl der verfügbaren Listen, zu welcher neue User hinzugefügt werden                                                                          | Bervo Listen                |
 | Zweifache Bestätigung | Verwendung des Double-Opt-In Verfahrens. Der User muss die Teilnahme am Newsletter über eine gesondert versendete Mail bestätigen.               | enable / disable            |
-| Privacy Checkbox      | Text, der neben der Checkbox angezeigt wird.                                                                                                     | Text                        |
+| Datenschutz Checkbox  | Text, der neben der Checkbox angezeigt wird.                                                                                                     | Text                        |
 | Nach dem Senden       | Auswahl, ob nach Bestätigung eine Nachricht angezeigt oder der User umgeleitet werden soll (bei Auswahl Formular in einem Modalfenster anzeigen) | Nachricht zeigen / umleiten |
 | Nachricht             | Nachricht, die dem Benutzer/-in nach dem Senden angezeigt wird.                                                                                  | Text                        |
 | Titel                 | Titel eintragen                                                                                                                                  | Text                        |

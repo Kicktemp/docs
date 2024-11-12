@@ -1,7 +1,9 @@
 # Update
 
+## Update durchführen
+
 YOOaddons kannst du innerhalb von Joomla aktualisieren.
-Sobald eine neue Version verfügbar ist, erhältst du eine Benachrichtigung in deinem Dashboard.
+Sobald eine neue Version verfügbar ist, erhältst du eine Benachrichtigung in deinem Joomla! Dashboard.
 
 Um für das Plugin Updates durchführen zu können, musst du deinen Download Key in Joomla hinterlegen.
 
@@ -12,4 +14,9 @@ Für jedes unserer Plugins erhältst du einen alphanumerischen Code (Update-Schl
 **Achtung** Ohne den Download Key kannst du dein Plugin nicht aktualisieren.
 
 Deinen Schlüssel findest du, wenn du in unserem Shop angemeldet bist, im Dashboard unter dem Menüpunkt Keys (https://kicktemp.shop/dashboard/keys). Hier kannst du Schlüssel verwalten, neu anlegen, benennen, aktivieren, deaktivieren und zurücksetzten.
+
+![Key_Management.jpeg](assets/JPEG/Key_Management.jpeg)
+
 Im Joomla Backend findest du unter - System - Updates - Updatequellen eine Liste deiner Erweiterungen. Wähle hier entsprechendes Plugin aus und füge den Schlüssel unter Download-Schlüssel ein. Das Plugin ist nun für Updates berechtigt.
+
+![Update_Key_Joomla.jpeg](assets/JPEG/Update_Key_Joomla.jpeg)

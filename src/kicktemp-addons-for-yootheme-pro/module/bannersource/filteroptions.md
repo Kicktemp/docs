@@ -2,6 +2,8 @@
 
 Ist der Menüpunkt "benutzerdefinierte Banner" als Quelle für dynamische Inhalte ausgewählt bestehen folgende Filteroptionen:
 
+![Banner(Source)_Filter.jpeg](../../assets/JPEG/Banner%28Source%29/Banner%28Source%29_Filter.jpeg)
+
 | Setting                       | Description                                                                                                                                |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Kunde                         | Es werden nur Banner bestimmter Kunden angezeigt.                                                                                          |
