@@ -19,10 +19,10 @@ Im Folgenden werden alle Einstellungsmöglichkeiten kurz erklärt.
 
 **zweifache Bestätigung aktiv**
 
-| Setting                  | Description                                                                                                                                      | Bereichsvariablen |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| Template ID              | Hier kann ein Template ausgewählt werden                                                                                                         |                   |
-| Opt-In Redirection URL   | URL zur Weiterleitung nach Bestätigung über gesonderte E-Mail                                                                                    | Link              |
+| Setting                  | Description                                                    | Bereichsvariablen |
+|--------------------------|----------------------------------------------------------------|-------------------|
+| Template ID              | Hier kann ein Template ausgewählt werden                       |                   |
+| Opt-In Redirection URL   | URL zur Weiterleitung nach Bestätigung über gesonderte E-Mail  | Link              |
 
 
 

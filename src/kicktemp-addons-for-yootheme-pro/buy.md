@@ -13,7 +13,3 @@ Nach erfolgreichem Kaufabschluss erhältst du eine E-Mail mit deinen Zugangsdate
 Ändere das Passwort unter “Dashboard - Profil”.
 
 Solltest du Probleme mit deinem Login haben, dann kannst du uns jederzeit schreiben. Wir helfen dir gern weiter.
-
-# Download
-
-Bist du im Shop angemeldet, lade das Plugin unter folgendem Link herunter: https://kicktemp.shop/dashboard/downloads. Das Plugin wird als .zip-Datei heruntergeladen.
