@@ -2,8 +2,7 @@
 
 Im Folgenden werden alle Einstellungsmöglichkeiten erklärt.
 
-## Inahlt
-
+## Inhalt
 | Setting        | Description                            | Bereichsvariablen |
 |----------------|----------------------------------------|-------------------|
 | Icon           | Wähle einen Icon aus der Icon-Sammlung | Icon              |

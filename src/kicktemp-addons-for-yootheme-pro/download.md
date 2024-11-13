@@ -4,6 +4,7 @@
 
 Bist du im Shop angemeldet, kannst du das Plugin unter folgendem Link herunterladen: https://kicktemp.shop/dashboard/downloads.
 
-Das Plugin wird als .zip-Datei heruntergeladen.
+> [!NOTE]
+>Das Plugin wird als .zip-Datei heruntergeladen.
 
-![Download.jpeg](assets/JPEG/Download.jpeg)
+![Download.jpeg](assets/JPEG/gettingstarted/Download.jpeg)

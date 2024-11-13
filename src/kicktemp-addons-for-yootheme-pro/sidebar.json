@@ -3,7 +3,7 @@
         "text": "Getting Started",
         "items": [
             {
-                "text": "Overview",
+                "text": "Introduction",
                 "link": "/kicktemp-addons-for-yootheme-pro/"
             },
             {
@@ -130,7 +130,7 @@
     },
     {
         "text": "Dateien",
-        "base": "/kicktemp-addons-for-yootheme-pro/module/files",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/dateien",
         "items": [
             {
                 "text": "Overview",
