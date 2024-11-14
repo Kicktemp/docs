@@ -1,16 +1,25 @@
 # Integration
 
 1. Erstelle in einer Section das OpenGraph Element. Das Element hat keine Ausgabe und kann, wo gewünscht platziert werden.
+
+![Element_OG.jpeg](../../assets/JPEG/OpenGraph/Element_OG.jpeg)
+
 2. Wähle nun das Element aus, um Einstellungen vorzunehmen.
 3. Mit *Add Property* kannst du Tags hinzufügen.
 
 > Property Tag Beispiel: meta property="og:title" content="The Rock" /
+
+![Properties_OG.jpeg](../../assets/JPEG/OpenGraph/Properties_OG.jpeg)
 
 > [!IMPORTANT]
 > Für jeden Tag (Property Tag) muss ein Eintrag hinzugefügt werden.
 
 4. Wähle den neu erstellten Tag aus und gebe der Eigenschaft einen Namen.
 5. Im Folgenden kann entweder im Feld *Property Value* der String aus deinem Tag eingetragen oder im Feld darunter ein Bild ausgewählt werden. Wird das Feld *Property Value* ausgefüllt wird automatisch das Bild deaktiviert. Wird hingegen ein Bild ausgewählt, wird das Feld *Property Value* deaktiviert.
+
+|                                                           | Dynamisch                                                           |
+|-----------------------------------------------------------|---------------------------------------------------------------------|
+| ![Item_OG.jpeg](../../assets/JPEG/OpenGraph/Item_OG.jpeg) | ![Dynamisch_OG.jpeg](../../assets/JPEG/OpenGraph/Dynamisch_OG.jpeg) |
 
 > [!NOTE]
 > Wird ein Bild ausgewählt, muss im Property Tag die URL und nicht der Name des Bildes ausgegeben werden, damit das Bild richtig angezeigt werden kann.

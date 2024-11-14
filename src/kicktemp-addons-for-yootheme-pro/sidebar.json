@@ -39,10 +39,6 @@
             {
                 "text": "Filteroptions",
                 "link": "/filteroptions"
-            },
-            {
-                "text": "Settings",
-                "link": "/settings"
             }
         ]
     },
@@ -93,10 +89,6 @@
             {
                 "text": "Functions",
                 "link": "/functions"
-            },
-            {
-                "text": "Settings",
-                "link": "/settings"
             }
         ]
     },
@@ -125,6 +117,10 @@
             {
                 "text": "Integration",
                 "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },
@@ -139,10 +135,6 @@
             {
                 "text": "Integration",
                 "link": "/integration"
-            },
-            {
-                "text": "Settings",
-                "link": "/settings"
             }
         ]
     },
@@ -243,6 +235,10 @@
             {
                 "text": "Integration",
                 "link": "/integration"
+            },
+            {
+                "text": "Settings",
+                "link": "/settings"
             }
         ]
     },

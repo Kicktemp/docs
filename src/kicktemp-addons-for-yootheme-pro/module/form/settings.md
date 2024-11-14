@@ -28,7 +28,6 @@ Im Folgenden werden alle Einstellungsmöglichkeiten erklärt.
 | Button         | Text und Styling des Button                                                                                                    |
 | Modal          | Auswahl, ob das Formular in einem Modalfenster angezeigt werden soll und entsprechende Einstellungsmöglichkeiten               |
 
-
 # Feldtypen
 
 Hier werden kurz die verschiedenen Arten von Feldtypen erklärt.
