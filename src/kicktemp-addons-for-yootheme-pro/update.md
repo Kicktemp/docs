@@ -12,7 +12,7 @@ Sobald eine neue Version verfügbar ist, erhältst du eine Benachrichtigung in d
 
 Für jedes unserer Plugins erhältst du einen alphanumerischen Code (Update-Schlüssel/Download Key), der für jede Webseite individuell erstellt wird.
 
-Deinen Schlüssel findest du, wenn du in unserem Shop angemeldet bist, im Dashboard unter dem Menüpunkt *Keys*. Hier kannst du Schlüssel verwalten, neu anlegen, benennen, aktivieren, deaktivieren und zurücksetzten (https://kicktemp.shop/dashboard/keys).
+Deinen Schlüssel findest du, wenn du in unserem Shop angemeldet bist, im [Dashboard](https://kicktemp.shop/dashboard/keys) unter dem Menüpunkt *Keys*. Hier kannst du Schlüssel verwalten, neu anlegen, benennen, aktivieren, deaktivieren und zurücksetzten.
 
 ![Key_Management.jpeg](assets/JPEG/gettingstarted/Key_Management.jpeg)
 

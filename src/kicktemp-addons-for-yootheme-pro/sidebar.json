@@ -79,7 +79,7 @@
         ]
     },
     {
-        "text": "ContactSource",
+        "text": "Contact (Source)",
         "base": "/kicktemp-addons-for-yootheme-pro/module/contactsource",
         "items": [
             {
@@ -115,7 +115,7 @@
         ]
     },
     {
-        "text": "FavecSource",
+        "text": "Faved (Source)",
         "base": "/kicktemp-addons-for-yootheme-pro/module/favedsource",
         "items": [
             {

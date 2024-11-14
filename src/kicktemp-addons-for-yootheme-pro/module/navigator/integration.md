@@ -2,7 +2,6 @@
 
 1. Erstelle innerhalb der gewünschten Section das Navigatorelement.
 
-
 ![Element_Navigator.jpeg](../../assets/JPEG/Navigator/Element_Navigator.jpeg)
 
 2. Wähle das Element aus.
