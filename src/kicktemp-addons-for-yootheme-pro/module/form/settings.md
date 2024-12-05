@@ -1,190 +1,82 @@
-# **Settings**
+# Grundeinstellungen für das Formular
 
-Im Folgenden werden alle Einstellungsmöglichkeiten erklärt.
+In dieser Sektion werden die grundlegenden Einstellungen für das Formular festgelegt, darunter Empfänger, Absender, E-Mail-Inhalte und das Verhalten nach dem Absenden. Du kannst die Felder und ihre Beschreibungen anpassen, um das Formular genau nach deinen Anforderungen zu gestalten.
 
-# Formulareinstellungen
+## Felder:
 
-## Inhalt
+| **Feld**                      | **Beschreibung**                                                                                                               | **Bedingung (wenn gesetzt)**                           | **Source** |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|-----------|
+| **content**                    | Das **content**-Feld enthält Formulareingabefelder, die du dynamisch hinzufügen kannst. Jedes Formularfeld wird durch **kickform_input** konfiguriert. | -                                                      | Ja        |
+| **recipients**                 | Eine durch Kommas getrennte Liste von E-Mail-Empfängern für die Formularantworten.                                                                                   | -                                                      | Ja        |
+| **from**                       | Die E-Mail-Adresse des Absenders. Standardmäßig wird die E-Mail-Adresse der Webseite verwendet.                                                                                       | -                                                      | Ja        |
+| **fromname**                   | Der Name des Absenders. Standardmäßig wird der Name der Webseite verwendet.                                                                                             | -                                                      | Ja        |
+| **reply_tos**                  | Eine durch Kommas getrennte Liste von **Reply-To**-Adressen. Diese werden verwendet, wenn auf das Formular geantwortet wird.                                            | -                                                      | Ja        |
+| **subject**                    | Der Betreff der E-Mail, die an die Empfänger gesendet wird.                                                                                                                                   | -                                                      | Ja        |
+| **body**                       | Der Inhalt der E-Mail, die an die Empfänger gesendet wird. Dieser Text kann als HTML verwendet werden, um eine detaillierte Nachricht zu erstellen.                       | -                                                      | Ja        |
+| **email_copy**                 | Wenn aktiviert, wird eine Kopie der gesendeten E-Mail an den Absender (Submitter) verschickt.                                                                                   | -                                                      | Ja        |
+| **subject_copy**               | Der Betreff für die E-Mail, die an den Submitter gesendet wird, wenn **email_copy** aktiviert ist.                                                                              | Wenn **email_copy** aktiviert ist                        | Ja        |
+| **body_copy**                  | Der Inhalt der E-Mail, die an den Submitter gesendet wird, wenn **email_copy** aktiviert ist.                                                                                     | Wenn **email_copy** aktiviert ist                        | Ja        |
+| **from_copy**                  | Die Absender-Adresse für die E-Mail, die an den Submitter geschickt wird, wenn **email_copy** aktiviert ist.                                                                       | Wenn **email_copy** aktiviert ist                        | Ja        |
+| **fromname_copy**              | Der Absendername für die E-Mail, die an den Submitter geschickt wird, wenn **email_copy** aktiviert ist.                                                                         | Wenn **email_copy** aktiviert ist                        | Ja        |
+| **recipients_copy**            | Eine durch Kommas getrennte Liste von Empfängern, an die die E-Mail-Kopie geschickt wird, wenn **email_copy** aktiviert ist.                                                    | Wenn **email_copy** aktiviert ist                        | Ja        |
+| **html**                       | Gibt an, ob die E-Mail im HTML-Format gesendet werden soll.                                                                                                                           | -                                                      | Ja        |
+| **provider.after_submit**      | Bestimmt das Verhalten nach dem Absenden des Formulars. Wähle zwischen "Nachricht anzeigen", "Seite weiterleiten" oder "Benachrichtigung anzeigen".                             | -                                                      | Ja        |
+| **provider.message**           | Die Nachricht, die dem Benutzer nach dem Absenden des Formulars angezeigt wird, wenn **provider.after_submit** auf „Nachricht anzeigen“ oder „Benachrichtigung anzeigen“ gesetzt ist. | Wenn **provider.after_submit** auf 'message' oder 'notification' gesetzt ist | Ja        |
+| **provider.redirect**          | Der Link, zu dem der Benutzer nach dem Absenden weitergeleitet wird, wenn **provider.after_submit** auf 'redirect' gesetzt ist.                                                  | Wenn **provider.after_submit** auf 'redirect' gesetzt ist | Ja        |
+| **provider.notification.pos**  | Position der Benachrichtigung auf dem Bildschirm (z. B. oben links, unten rechts). Wird verwendet, wenn **provider.after_submit** auf 'notification' gesetzt ist.               | Wenn **provider.after_submit** auf 'notification' gesetzt ist | Ja        |
+| **provider.notification.timeout** | Die Zeit (in Millisekunden), nach der die Benachrichtigung verschwindet, wenn **provider.after_submit** auf 'notification' gesetzt ist. Wenn auf 0 gesetzt, bleibt die Benachrichtigung dauerhaft sichtbar. | Wenn **provider.after_submit** auf 'notification' gesetzt ist | Ja        |
+| **provider.notification.status**  | Bestimmt den Status (Farbe) der Benachrichtigung (z. B. Erfolg, Warnung, Fehler). Wird verwendet, wenn **provider.after_submit** auf 'notification' gesetzt ist.                  | Wenn **provider.after_submit** auf 'notification' gesetzt ist | Ja        |
 
-| Setting                                | Description                                                                                              |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Empfänger                              | Empfänger E-Mailadresse oder Liste von E-Mailadressen                                                    |
-| From                                   | Absender E-Mailadresse (wenn nicht ausgefüllt Wert aus Webseiten- Konfiguration)                         |
-| Fromname                               | Absendername (wenn nicht ausgefüllt Wert aus Webseiten- Konfiguration)                                   |
-| Replys to                              | Antwort- Adresse                                                                                         |
-| Betreff                                | Betreff der E-Mail                                                                                       |
-| Body                                   | Inhalt der E-Mail                                                                                        |
-| Kopie an Absender                      | Auswahl, ob an Formularabsender eine Kopie gesendet werden soll                                          |
-| Den E- Mail- Inhalt als HTML versenden | Auswahlmöglichkeit, ob der Inhalt als HTML versendet werden soll                                         |
-| Nach dem Senden                        | Auswahl, ob nach dem Senden die Nachricht angezeigt werden soll oder ob der User umgeleitet werden soll  |
-| Nachricht                              | Hier kann die Nachricht eingetragen werden, die dem Absender nach dem Senden angeziegt werden soll.      |
+---
 
-## Einstellungen
+### Beschreibung der wichtigsten Felder:
 
-| Setting        | Description                                                                                                                    |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Send an E-Mail | Wenn Feld CCs und/oder BCCs eingetragen, wird entsprechend eine E-Mail versand.                                                |
-| Formular       | Darstellungseinstellungen für das Formular, wie horizontales Formular, Zeige Labels (ja/nein), Spaltenabstand, Größe und Stil. |
-| Button         | Text und Styling des Button                                                                                                    |
-| Modal          | Auswahl, ob das Formular in einem Modalfenster angezeigt werden soll und entsprechende Einstellungsmöglichkeiten               |
+#### **content**
+Das **content**-Feld fügt dynamisch Formulareingabefelder hinzu. Hier werden alle **kickform_input**-Elemente integriert, die du über die Einstellungen definieren kannst. Dies ermöglicht es dir, Formulare dynamisch zu erstellen, ohne den Code jedes Mal neu schreiben zu müssen. Du kannst Platzhalter wie `{name}` oder `{email}` verwenden, um bestimmte Daten dynamisch einzufügen.
 
-# Feldtypen
+**Beispiel:**
+- **content**: Füge ein Eingabefeld mit dem **Name** des Benutzers ein, indem du `{name}` verwendest.
+- **Verwendung im Formular**: `Betreff: Neue Anfrage von {name} {email}`
 
-Hier werden kurz die verschiedenen Arten von Feldtypen erklärt.
+#### **recipients**
+Dieses Feld gibt an, an welche E-Mail-Adressen das Formular nach dem Absenden gesendet wird. Es kann eine oder mehrere E-Mail-Adressen enthalten, die durch Kommas getrennt sind.
 
-| Feldtyp     | Description                                                                        | Dynamic  |
-|-------------|------------------------------------------------------------------------------------|:--------:|
-| Eingabefeld | Reines Text-Eingabefeld für z.B. Namen                                             | &#x2713; |
-| Textarea    | Textfeld für längere Texte. Angabe individueller Zeilennenge möglich.              | &#x2713; |
-| Auswählen   | Über den Punkt Optionen können verschiedene Auswahlmöglichkeiten angegeben werden. | &#x2713; |
-| E-Mail      | Dieses Feld ist für E-Mailadressen vorgesehen. Der Eintrag muss ein @ beinhalten.  | &#x2713; |
-| Datum       | Datumsfeld. Es gibt die Möglichkeit das Datum über einen Kalender einzutragen.     | &#x2713; |
-| Versteckt   | Dieses Feld ist nicht sichtbar. Es dient z.B. Vorbelegung bzw. Vorauswahl.         | &#x2713; |
-| Radio       | Anklickauswahl                                                                     | &#x2713; |
-| Checkbox    | Abhaken                                                                            | &#x2713; |
-| Text        | Feld füt Text zwischen den Formularfeldern                                         | &#x2713; |
-| Datei       | Feld um Dateien hochladen zu können.                                               | &#x2713; |
-| Honeypot    | Feld für Spamprotection.                                                           | &#x2713; |
-| Captcha     |                                                                                    | &#x2713; |
+**Beispiel:**
+- `nils@kicktemp.com, support@kicktemp.com`
 
-## Settings der Feldtypen
+#### **from und fromname**
+Die **from**-E-Mail-Adresse und der **fromname** sind die Absenderadresse und der Absendername, die in der gesendeten E-Mail erscheinen. Standardmäßig werden die globalen Einstellungen der Website verwendet.
 
-**Eingabe**
+#### **subject und body**
+Hier legst du den **Betreff** und den **Inhalt** der E-Mail fest. Du kannst Platzhalter verwenden, um dynamische Daten einzufügen, wie z.B. den Namen des Benutzers oder den Inhalt des Formulars.
 
-| Setting                           | Description                                                                  | Dynamic  |
-|-----------------------------------|------------------------------------------------------------------------------|:--------:|
-| Name                              | Name des Formularfeldes                                                      | &#x2713; |
-| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
-| Wert                              | Vorauswahl                                                                   | &#x2713; |
-| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          | &#x2713; |
+**Beispiel:**
+- **subject**: "Neue Anfrage von {name}"
+- **body**: "Hallo {name},<br>Danke für deine Anfrage. Wir werden uns in Kürze bei dir melden."
 
-**Textarea**
+#### **provider.after_submit**
+Dieses Feld definiert, was nach dem Absenden des Formulars passiert. Du kannst wählen, ob eine Nachricht angezeigt wird, der Benutzer weitergeleitet wird oder eine Benachrichtigung erscheint.
 
-| Setting                           | Description                                                                  | Dynamic  |
-|-----------------------------------|------------------------------------------------------------------------------|:--------:|
-| Name                              | Name des Formularfeldes                                                      | &#x2713; |
-| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
-| Größe                             | Eintragbaren Zeilenmenge im Feld                                             | &#x2713; |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
-| Wert                              | Vorauswahl                                                                   | &#x2713; |
+**Beispiel:**
+- **"message"**: Zeigt dem Benutzer eine Erfolgsmeldung nach der Einsendung.
+- **"redirect"**: Leitet den Benutzer nach der Einsendung auf eine andere Seite weiter.
 
-**Auswahl**
+#### **provider.message**
+Die **provider.message** ist die Nachricht, die nach dem Absenden des Formulars angezeigt wird, wenn der Wert von **provider.after_submit** auf „Nachricht anzeigen“ gesetzt wurde.
 
-| Setting                           | Description                                                                  | Dynamic  |
-|-----------------------------------|------------------------------------------------------------------------------|:--------:|
-| Name                              | Name des Formularfeldes                                                      | &#x2713; |
-| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
-| Option                            | Hier werden die Auswahloptionen eingetragen                                  | &#x2713; |
-| Multiple                          | Mehrfachauswahl ermöglichen                                                  | &#x2713; |
-| Autofocus                         | ?                                                                            | &#x2713; |
-| Größe                             | Eintragbaren Zeilenmenge im Feld                                             | &#x2713; |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
-| Wert                              | Vorauswahl                                                                   | &#x2713; |
+**Beispiel:**
+- "Vielen Dank für deine Anfrage. Wir melden uns in Kürze bei dir!"
 
-**E-mail**
+#### **provider.notification.pos, timeout, status**
+Diese Felder steuern die Position, Dauer und den Status (Farbe) der Benachrichtigung, die nach dem Absenden des Formulars angezeigt wird.
 
-| Setting                           | Description                                                                  | Dynamic  |
-|-----------------------------------|------------------------------------------------------------------------------|:--------:|
-| Name                              | Name des Formularfeldes                                                      | &#x2713; |
-| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
-| Fehlermeldung  (wenn Pflichtfeld) | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist    | &#x2713; |
-| Fehler E-Mail-Nachricht           | ?                                                                            | &#x2713; |
-| Wert                              | Vorauswahl                                                                   | &#x2713; |
+**Beispiel:**
+- **Position**: `top-right`
+- **Status**: `success`
+- **Timeout**: `5000` (5 Sekunden)
 
-**Datum**
+---
 
-| Setting                           | Description                                                                  | Dynamic  |
-|-----------------------------------|------------------------------------------------------------------------------|:--------:|
-| Name                              | Name des Formularfeldes                                                      | &#x2713; |
-| Label                             | Titel des Formularfeldes                                                     | &#x2713; |
-| Label anzeigen                    | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden | &#x2713; |
-| Placeholder                       | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.   | &#x2713; |
-| min                               | Datumswert darf nicht kleiner sein als der angegebene min. Wert              | &#x2713; |
-| max                               | Datumswert darf nicht größer sein als der angegebene max. Wert               | &#x2713; |
-| Erforderlich                      | Ist das Feld ein Pflichtfeld                                                 | &#x2713; |
-| Equal                             | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                | &#x2713; |
-| Wert                              | Vorauswahl                                                                   | &#x2713; |
-| Icon                              | Hier kann ein Icon der im Feld angezeigt werden soll gewählt werden          | &#x2713; |
+### Fazit
 
-**Versteckt**
-
-| Setting | Description             | Dynamic  |
-|---------|-------------------------|:--------:|
-| Name    | Name des Formularfeldes | &#x2713; |
-| Wert    | Vorauswahl              | &#x2713; |
-
-**Radio**
-
-| Setting          | Description                                                                    | Dynamic  |
-|------------------|--------------------------------------------------------------------------------|:--------:|
-| Name             | Name des Formularfeldes                                                        | &#x2713; |
-| Label            | Titel des Formularfeldes                                                       | &#x2713; |
-| Label anzeigen   | Soll das Anzeigen des Label für entsprechendes Formularfeld erzwungen werden   | &#x2713; |
-| Placeholder      | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.     | &#x2713; |
-| Optionen         | Hier werden die Auswahloptionen hinzugefügt                                    |          |
-| Option pro Zeile | Die Auswahloptionen werden pro Zeile angezeigt                                 | &#x2713; |
-| Erforderlich     | Ist das Feld ein Pflichtfeld                                                   | &#x2713; |
-| Fehlermeldung    | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist      | &#x2713; |
-| Equal            | Name des Feldes mit dem das Formularfeld übereinstimmen muss.                  | &#x2713; |
-| Wert             | Vorauswahl                                                                     | &#x2713; |
-
-**Checkbox**
-
-| Setting       | Description                                                               | Dynamic  |
-|---------------|---------------------------------------------------------------------------|:--------:|
-| Name          | Name des Formularfeldes                                                   | &#x2713; |
-| Erforderlich  | Ist das Feld ein Pflichtfeld                                              | &#x2713; |
-| Fehlermeldung | Text der angezeigten Fehlermeldung wenn das Pflichtfeld nicht gefüllt ist | &#x2713; |
-| Equal         | Name des Feldes mit dem das Formularfeld übereinstimmen muss.             | &#x2713; |
-| Wert          | Vorauswahl                                                                | &#x2713; |
-| Inhalt        | Text der Checkbox                                                         | &#x2713; |
-
-**Text**
-
-| Setting       | Description              | Dynamic  |
-|---------------|--------------------------|:--------:|
-| Name          | Name des Formularfeldes  | &#x2713; |
-| Inhalt        | Text anzuzeigende Text   | &#x2713; |
-
-**Datei**
-
-| Setting       | Description                                                                                               | Dynamic  |
-|---------------|-----------------------------------------------------------------------------------------------------------|:--------:|
-| Name          | Name des Formularfeldes                                                                                   | &#x2713; |
-| Label         | Titel des Formularfeldes                                                                                  | &#x2713; |
-| Placeholder   | Hier kann der Text für den Placeholder (Felderklärung) eingetragen werden.                                | &#x2713; |
-| Multiple      | Mehrfachauswahl ermöglichen                                                                               | &#x2713; |
-| Accept        | Zeichenkette, die definiert, welche Dateitypen die Dateieingabe akzeptieren soll                          | &#x2713; |
-| Capture       | Zeichenkette, die angibt, welche Kamera für die Erfassung von Bild- oder Videodaten verwendet werden soll | &#x2713; |
-| Erforderlich  | Ist das Feld ein Pflichtfeld                                                                              | &#x2713; |
-
-**Honeypot**
-
-| Setting                         | Description                                                                                               | Dynamic  |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------|:--------:|
-| Name                            | Name des Formularfeldes                                                                                   | &#x2713; |
-| min. Sekunden                   | Jede Eingabe die innerhalb der angegeben Zeit getätigt wird, wird als invalide eingestuft                 |
-| Honeypot Feld Gefüllt Nachricht | Angezeigte Fehlermeldung, wenn das Honeypotfeld ausgefüllt wurde                                          |
-| min. Sekunden für Nachricht     | Angezeigte Fehlermeldung, wenn das Formular zu schnell ausgefüllt und abgeschickt wird.                   |
-
-**Captcha**
-
-| Setting       | Description              | Dynamic  |
-|---------------|--------------------------|:--------:|
-| Name          | Name des Formularfeldes  | &#x2713; |
+Die **Grundeinstellungen** des Formulars bieten dir eine mächtige Möglichkeit, deine Formulare flexibel und dynamisch zu gestalten. Von der Konfiguration der Empfänger bis hin zur Definition des Verhaltens nach der Formularübermittlung – diese Einstellungen bieten dir eine hohe Kontrolle. Außerdem können Platzhalter und benutzerdefinierte Tags verwendet werden, um die Formulardaten dynamisch in den E-Mail-Inhalt zu integrieren und das Verhalten nach dem Absenden anzupassen.

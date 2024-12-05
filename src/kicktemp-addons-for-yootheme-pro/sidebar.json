@@ -191,12 +191,20 @@
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
-            },
-            {
                 "text": "Settings",
                 "link": "/settings"
+            },
+            {
+                "text": "Advanced",
+                "link": "/advanced"
+            },
+            {
+                "text": "Felder",
+                "link": "/input-fields"
+            },
+            {
+                "text": "Spamschutz",
+                "link": "/captcha"
             }
         ]
     },
