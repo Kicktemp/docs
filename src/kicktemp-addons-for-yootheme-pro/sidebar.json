@@ -29,16 +29,32 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/bannersource",
         "items": [
             {
-                "text": "Overview",
+                "text": "Übersicht",
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
+                "text": "Filter-Einstellungen",
+                "link": "/filter-settings"
             },
             {
-                "text": "Filteroptions",
-                "link": "/filteroptions"
+                "text": "Details zu wichtigen Filtern",
+                "link": "/important-filters"
+            },
+            {
+                "text": "Felder im BannerType",
+                "link": "/fields"
+            },
+            {
+                "text": "So funktioniert das Modul",
+                "link": "/how-to-use"
+            },
+            {
+                "text": "Medien",
+                "link": "/media"
+            },
+            {
+                "text": "Fazit",
+                "link": "/conclusion"
             }
         ]
     },
@@ -47,7 +63,7 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/brevo",
         "items": [
             {
-                "text": "Overview",
+                "text": "Übersicht",
                 "link": "/"
             },
             {
@@ -55,8 +71,20 @@
                 "link": "/integration"
             },
             {
-                "text": "Settings",
+                "text": "Einstellungen",
                 "link": "/settings"
+            },
+            {
+                "text": "Inhalt",
+                "link": "/content"
+            },
+            {
+                "text": "So funktioniert das Modul",
+                "link": "/how-to-use"
+            },
+            {
+                "text": "Fazit",
+                "link": "/conclusion"
             }
         ]
     },
@@ -65,7 +93,7 @@
         "base": "/kicktemp-addons-for-yootheme-pro/module/colors",
         "items": [
             {
-                "text": "Overview",
+                "text": "Übersicht",
                 "link": "/"
             },
             {
@@ -83,26 +111,38 @@
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
+                "text": "Templates",
+                "link": "/templates"
             },
             {
-                "text": "Functions",
-                "link": "/functions"
+                "text": "Dynamic Content",
+                "link": "/dynamic-content"
+            },
+            {
+                "text": "Fields",
+                "link": "/fields"
+            },
+            {
+                "text": "How-to",
+                "link": "/how-to"
             }
         ]
     },
     {
         "text": "Elemente",
-        "base": "/kicktemp-addons-for-yootheme-pro/module/elemente",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/element",
         "items": [
             {
                 "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
+                "text": "Exit intent",
+                "link": "/exitintent"
+            },
+            {
+                "text": "Grid Counter",
+                "link": "/gridcounter"
             }
         ]
     },
@@ -115,26 +155,30 @@
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
+                "text": "Faved Element",
+                "link": "/faved-element"
             },
             {
-                "text": "Settings",
-                "link": "/settings"
+                "text": "Custom Source",
+                "link": "/custom-source"
             }
         ]
     },
     {
         "text": "Dateien",
-        "base": "/kicktemp-addons-for-yootheme-pro/module/dateien",
+        "base": "/kicktemp-addons-for-yootheme-pro/module/filesource",
         "items": [
             {
                 "text": "Overview",
                 "link": "/"
             },
             {
-                "text": "Integration",
-                "link": "/integration"
+                "text": "Dynamic Content",
+                "link": "/dynamic-content"
+            },
+            {
+                "text": "Beispiele",
+                "link": "/examples"
             }
         ]
     },

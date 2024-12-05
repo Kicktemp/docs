@@ -1,18 +1,26 @@
-# Integration
+# Integration des Brevo Moduls
 
-1. Um auf Daten oder Templates aus Brevo zugreifen zu können, muss der API-Schlüssel hinterlegt werden. Gehe dafür in die Einstellungen von YOOtheme und wähle die externen Dienste aus. Über den dort angegebenen Link gelangst du direkt auf die Seite von Brevo, zur Generierung eines API-Token. Kopiere deinen API-Token und hinterlege diesen in den Einstellungen von YOOtheme.
+Das Brevo-Modul lässt sich nahtlos in YOOtheme Pro integrieren. In diesem Abschnitt erfährst du, wie du das Modul einrichtest und aktivierst.
 
-> [!IMPORTANT]
->Du musst bei Brevo registriert und angemeldet sein um die Seite aufrufen zu können.
+---
 
-![Brevo_API.jpeg](../../assets/JPEG/Brevo/Brevo_API.jpeg)
+## **1. API-Schlüssel einrichten**
+- Öffne die **Einstellungen > Externe Dienste** im YOOtheme Pro Builder.
+- Trage deinen **Brevo API-Schlüssel** ein, um die Verbindung zur Brevo API zu aktivieren.
 
-2. Erstelle mit dem Builder innerhalb einer Section das Brevo-Element. Dieses findest du unter den Kicktemp Elements.
+---
 
-|                                                                       |                                                                   |
-|-----------------------------------------------------------------------|-------------------------------------------------------------------|
-| ![Brevo_Element_1.jpeg](../../assets/JPEG/Brevo/Brevo_Element_1.jpeg) | ![Brevo_Element.jpeg](../../assets/JPEG/Brevo/Brevo_Element.jpeg) |
+## **2. Modul hinzufügen**
+- Öffne den **YOOtheme Pro Page Builder**.
+- Ziehe das **Brevo Modul** an die gewünschte Stelle auf deiner Seite.
 
-3. Wähle nun das Brevo-Element aus, um deine gewünschten Einstellungen vorzunehmen.
+---
 
-Jetzt kannst du auf Daten und Templates aus Brevo zugreifen und diese direkt in YOOtheme nutzen.
+## **3. Erste Konfiguration**
+- Wähle grundlegende Einstellungen wie:
+    - **Listen**, in die Kontakte eingetragen werden sollen.
+    - Aktivierung von **Double Opt-in**, falls erforderlich.
+
+---
+
+Mit diesen Schritten ist die Integration abgeschlossen. Du kannst jetzt die [Details zu den Einstellungen](./settings.md) und [Content-Feldern](./content.md) anpassen.

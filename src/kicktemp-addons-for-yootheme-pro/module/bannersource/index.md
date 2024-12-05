@@ -1,11 +1,11 @@
-# Overview - Banner (Source)
+# BannerSource Modul
 
-## Einführung
+Das **BannerSource Modul** erweitert YOOtheme Pro und erlaubt dir, Banner aus Joomla als dynamische Inhalte zu integrieren. Es bietet flexible Filteroptionen, eine einfache Konfiguration und unterstützt dynamische Inhalte wie Titel, Bilder und Links.
 
-Mit dem Kick YOOAddons Module "BannerSource” kannst du Inhalte aus der Joomla Banner Komponente per dynamischen Inhalt in YOOtheme Pro Layouts wie Galerie, Panel Slider oder auch das HTML Element einbinden.
-Dabei stehen die kompletten Filterfunktionen, die man aus dem Banner Modul kennt zur Verfügung.
-Ein neues Feature ist die Möglichkeit Banner nur einmal pro Seite anzeigen zu lassen, obwohl eventuell ein Element die gleichen Filterfunktion-Einstellungen hat.
-
-Vorteil des Addons ist, dass der Verwaltungsaufwand für die Webseite reduziert wird. Die Banner werden einfach in der Banner-Komponente gepflegt und automatisch auf der Webseite aktualisiert, ohne dass noch manuelle Eingriffe nötig wären.
-
-## Video
+## Inhaltsverzeichnis
+- [Filter-Einstellungen](./filter-settings.md)
+- [Details zu wichtigen Filtern](./important-filters.md)
+- [Felder im BannerType](./fields.md)
+- [So funktioniert das Modul](./how-to-use.md)
+- [Medien](./media.md)
+- [Fazit](./conclusion.md)
