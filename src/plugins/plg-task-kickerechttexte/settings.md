@@ -1,8 +1,12 @@
 # Einstellungen
 
+## Geplante Aufgaben
+Gehe im Joomla-Backend unter System → Verwalten zu [Geplante Aufgaben](deine-domain.tld/administrator/index.php?option=com_scheduler&view=tasks) und lege eine neue Aufgabe vom Typ **Kick: eRecht24 Rechtstexte-API** an.
 
+## Basisfelder
+Alle Joomla-Core Optionen sind hier möglich.
 
-## Übersicht
+## Aufgabenparameter
 Die Aufgabenparameter ermöglichen es dir, den Import der Rechtstexte zu konfigurieren:
 - **rechtliches Dokument**: Wähle den zu importierenden Dokumenttyp aus. Derzeit sind Impressum, Datenschutzerklärung und Datenschutzerklärung für soziale Medien verfügbar.
 - **deutscher Beitrag**: Wähle den Beitrag aus, in den importiert werden soll.

@@ -37,6 +37,10 @@
                 "link": "settings"
             },
             {
+                "text": "E-Mail Templates",
+                "link": "mail-templates"
+            },
+            {
                 "text": "Fazit",
                 "link": "conclusion"
             }
