@@ -1,0 +1,45 @@
+[
+    {
+        "text": "Getting Started",
+        "items": [
+            {
+                "text": "Übersicht",
+                "link": "/plugins/"
+            },
+            {
+                "text": "Kaufen",
+                "link": "/plugins/buy"
+            },
+            {
+                "text": "Download",
+                "link": "/plugins/download"
+            },
+            {
+                "text": "Installation",
+                "link": "/plugins/installation"
+            },
+            {
+                "text": "Update",
+                "link": "/plugins/update"
+            }
+        ]
+    },
+    {
+        "text": "Kick eRecht24 Rechtstexte-API",
+        "base": "/plugins/plg-task-kickerechttexte/",
+        "items": [
+            {
+                "text": "Übersicht",
+                "link": "/"
+            },
+            {
+                "text": "Einstellungen",
+                "link": "settings"
+            },
+            {
+                "text": "Fazit",
+                "link": "conclusion"
+            }
+        ]
+    }
+]
