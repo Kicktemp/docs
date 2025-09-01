@@ -37,7 +37,7 @@ Die Aufgabenparameter ermöglichen es dir, den Import der Rechtstexte zu konfigu
     - **API-Schlüssel**: 1c2345c6d1f428db1ddc12134h6d0755f7878beda1cd1c04c56d486f3fe37c56
     - **E-Mail Benachrichtigung bei Erfolg**: info+erfolg@deine-tld-domain.de
     - **E-Mail Benachrichtigung bei Fehler**: info+fehler@deine-tld-domain.de
-    - **Caching Aktivieren**: Ja.
+    - **Caching Aktivieren**: Ja
     - **Caching Zeit**: 60
 
 ## Zusammenfassung
