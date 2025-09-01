@@ -3,7 +3,7 @@
 
 
 ## Übersicht
-Die Aufgabenparameter ermöglichen es dir, den Import der Rechtstexte konfigurieren:
+Die Aufgabenparameter ermöglichen es dir, den Import der Rechtstexte zu konfigurieren:
 - **rechtliches Dokument**: Wähle den zu importierenden Dokumenttyp aus. Derzeit sind Impressum, Datenschutzerklärung und Datenschutzerklärung für soziale Medien verfügbar.
 - **deutscher Beitrag**: Wähle den Beitrag aus, in den importiert werden soll.
 - **englischer Beitrag**: Wähle den Beitrag aus, in den importiert werden soll.

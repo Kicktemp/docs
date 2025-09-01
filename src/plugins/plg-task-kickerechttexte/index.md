@@ -11,7 +11,7 @@ Wird die Aufgabe regelmäßig geplant ausgeführt, bleiben deine rechtlichen Sei
 
 ## Inhaltsverzeichnis
 - [Einstellungen](settings.md)
-- [So funktioniert das Modul](how-to-use.md)
+- [So funktioniert das Plugin](how-to-use.md)
 - [Fazit](conclusion.md)
 
 ## Zusammenfassung
