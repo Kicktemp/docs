@@ -1,6 +1,6 @@
 # E-Mail Templates
 
-Gehe im Joomla-Backend unter System → Templates zu [E-Mail Templates](deine-domain.tld/administrator/index.php?option=com_mails&view=templates).
+Gehe im Joomla-Backend unter System → Templates zu E-Mail Templates.
 
 In der Suche kannst du als Suchwort **kick** nutzen um die beiden Templates zu finden.
 
