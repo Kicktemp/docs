@@ -1,7 +1,7 @@
 # Einstellungen
 
 ## Geplante Aufgaben
-Gehe im Joomla-Backend unter System → Verwalten zu [Geplante Aufgaben](deine-domain.tld/administrator/index.php?option=com_scheduler&view=tasks) und lege eine neue Aufgabe vom Typ **Kick: eRecht24 Rechtstexte-API** an.
+Gehe im Joomla-Backend unter System → Verwalten zu Geplante Aufgaben und lege eine neue Aufgabe vom Typ **Kick: eRecht24 Rechtstexte-API** an.
 
 ## Basisfelder
 Alle Joomla-Core Optionen sind hier möglich.
