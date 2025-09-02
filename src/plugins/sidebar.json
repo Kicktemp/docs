@@ -26,7 +26,7 @@
     },
     {
         "text": "Kick eRecht24 Rechtstexte-API",
-        "base": "/plugins/plg-task-kickerechttexte/",
+        "base": "/plugins/plg-task-kickerechttexte",
         "items": [
             {
                 "text": "Übersicht",
@@ -34,15 +34,15 @@
             },
             {
                 "text": "Einstellungen",
-                "link": "settings"
+                "link": "/settings"
             },
             {
                 "text": "E-Mail Templates",
-                "link": "mail-templates"
+                "link": "/mail-templates"
             },
             {
                 "text": "Fazit",
-                "link": "conclusion"
+                "link": "/conclusion"
             }
         ]
     }
