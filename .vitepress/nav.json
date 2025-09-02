@@ -5,6 +5,11 @@
         "activeMatch": "/kickyooaddons/"
     },
     {
+        "text": "Plugins",
+        "link": "/plugins/",
+        "activeMatch": "/plugins/"
+    },
+    {
         "text": "Kick Consent Manager",
         "link": "/kick-consent-manager/",
         "activeMatch": "/kickconsentmanager/"

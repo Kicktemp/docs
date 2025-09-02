@@ -10,4 +10,7 @@ hero:
     - theme: brand
       text: Kicktemp Addons for YOOtheme Pro
       link: /kicktemp-addons-for-yootheme-pro/
+    - theme: alt
+      text: Kick eRecht24 Rechtstexte-API
+      link: /plugins/plg-task-kickerechttexte/
 ---
