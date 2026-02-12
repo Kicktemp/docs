@@ -16,6 +16,10 @@
     {
       "text": "API Integration",
       "link": "/components/com_kickbannerstats/api-integration"
+    },
+    {
+      "text": "Looker Connector Code",
+      "link": "/components/com_kickbannerstats/looker-connector"
     }
   ]
 }

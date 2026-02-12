@@ -1,72 +1,114 @@
-# API & Looker Studio Integration
+# API & Looker Studio
 
-KickBannerStats stellt eine JSON-API über den Joomla API Wrapper bereit. Diese wird primär genutzt, um Daten an **Google Looker Studio** zu übergeben.
+Die größte Stärke von KickBannerStats liegt in der **Entkopplung**: Während Joomla die Daten sammelt, können externe Tools wie **Google Looker Studio** diese visualisieren – ohne die Performance Ihrer Webseite zu belasten.
 
-## API Endpoint
+## Das Ergebnis
 
-Der Zugriff erfolgt über den `StatisticsController`.
+Mit der Integration können Sie interaktive Dashboards erstellen, die Sie direkt mit Ihren Werbekunden teilen können.
 
-**Basis-URL:**
+![Looker Studio Report](./assets/lookerstudio.png)
+
+### Vorteile dieser Lösung
+* 🚀 **Performance:** Der Report lädt blitzschnell, da er auf die aggregierte API zugreift und nicht Millionen von Datenbankzeilen durchsucht.
+* 🔒 **Sicherheit:** Kunden erhalten Zugriff auf den Report, aber niemals direkten Zugriff auf Ihr Joomla-Backend.
+* 🎨 **White-Label:** Gestalten Sie den Report in Ihrem Corporate Design (oder dem des Kunden).
+
+---
+
+## Die API Schnittstelle
+
+KickBannerStats stellt einen nativen Joomla Webservice (API) Endpunkt bereit.
+
+### Endpoint
+
+```http
+GET /api/index.php/v1/kickbannerstats/statistics
+
+```
 
 ### Authentifizierung
-Die API nutzt die Standard Joomla API Token Authentifizierung (`Bearer Token` oder `X-Joomla-Token`).
 
-### Filter-Parameter
-Die API unterstützt folgende GET-Parameter zur Filterung:
+Der Zugriff erfolgt über einen **Joomla API Token**. Erstellen Sie diesen im Backend unter **Benutzer** > **Verwalten** > (User auswählen) > **Joomla API Token**.
+
+Der Token muss im Header der Anfrage gesendet werden:
+
+```http
+X-Joomla-Token: c2h...I6
+
+```
+
+### Filter Parameter
+
+Sie können die Daten serverseitig filtern, um die Payload klein zu halten:
 
 | Parameter | Typ | Beschreibung |
-| :--- | :--- | :--- |
-| `filter[begin]` | String (Y-m-d) | Startdatum (inklusiv) |
-| `filter[end]` | String (Y-m-d) | Enddatum (inklusiv) |
-| `filter[client_id]` | Int | Nur spezifischer Kunde |
-| `filter[banner_id]` | Int | Nur spezifisches Banner |
+| --- | --- | --- |
+| `filter[begin]` | `YYYY-MM-DD` | Startdatum (inklusiv) |
+| `filter[end]` | `YYYY-MM-DD` | Enddatum (inklusiv) |
+| `filter[client_id]` | `INT` | Nur Daten für einen spezifischen Kunden |
+| `filter[banner_id]` | `INT` | Nur Daten für ein spezifisches Banner |
 
-## Beispiel Response
-https://ihre-domain.de/api/index.php/v1/kickbannerstats/statistics
+### Beispiel Response (JSON)
 
 ```json
 [
     {
-        "date": "2026-01-20",
+        "date": "2026-02-12",
         "banner_id": 422,
         "client_id": 13,
         "impressions": 1319,
         "clicks": 3,
         "banner_name": "Musical Kids Amulett",
         "client_name": "besser-im-blick",
-        "updated_at": "2026-02-12 13:37:39"
+        "updated_at": "2026-02-13 03:00:00"
     },
     {
-        "date": "2026-01-19",
+        "date": "2026-02-11",
         "banner_id": 422,
         "client_id": 13,
         "impressions": 41324,
         "clicks": 38,
         "banner_name": "Musical Kids Amulett",
         "client_name": "besser-im-blick",
-        "updated_at": "2026-02-12 13:37:39"
+        "updated_at": "2026-02-13 03:00:00"
     }
 ]
+
 ```
 
-Looker Studio Connector
-Um diese Daten in Looker Studio zu nutzen, benötigen Sie ein Google Apps Script (Community Connector), welches diese API konsumiert.
+---
 
-Schema Definition
-Im Connector mappen Sie die JSON-Felder wie folgt:
+## Google Looker Studio Connector
 
-date -> Datum (YYYYMMDD)
+Um die JSON-Daten in Looker Studio zu nutzen, wird ein **Community Connector** (Google Apps Script) benötigt, der die Daten abruft und in das Looker-Format umwandelt.
 
-banner_name -> Text
+### Schema Konfiguration
 
-client_name -> Text
+Im Connector werden die JSON-Felder wie folgt gemappt:
 
-impressions -> Zahl
+1. **Dimensionen (Grün):**
+* `Date` (Typ: YYYYMMDD)
+* `Banner Name` (Typ: Text)
+* `Client Name` (Typ: Text)
 
-clicks -> Zahl
 
-CTR -> Berechnetes Feld (clicks / impressions)
+2. **Metriken (Blau):**
+* `Impressions` (Typ: Zahl)
+* `Clicks` (Typ: Zahl)
 
-::: tip Caching
-Da die Daten in #__kickbannerstats_daily nur einmal täglich aktualisiert werden, empfiehlt es sich, im Looker Studio Connector ein Caching von 12 bis 24 Stunden zu aktivieren.
+
+3. **Berechnete Felder:**
+* **CTR:** Erstellen Sie im Looker Studio ein Feld mit der Formel:
+```sql
+SUM(Clicks) / SUM(Impressions)
+
+```
+
+
+*(Formatieren Sie dieses Feld als Prozent)*
+
+
+
+::: tip Caching Strategie
+Da die Daten in Joomla nur einmal täglich (per Task) aktualisiert werden, sollten Sie im Looker Studio Connector das Caching aktivieren (z.B. für 12 Stunden). Dies beschleunigt den Report für den Endkunden extrem.
 :::
