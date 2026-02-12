@@ -200,33 +200,3 @@ Diese Datei steuert die Berechtigungen.
 7. Fügen Sie die Deployment ID ein und klicken Sie auf **Bestätigen**.
 
 🎉 **Fertig!** Sie werden nun nach Ihrer Domain und dem API Token gefragt und können sofort loslegen.
-
-```
-
----
-
-### Schritt 4: Sidebar anpassen
-
-Damit die User diesen Schatz auch finden, binde ihn in deine `sidebar.json` ein.
-
-**Datei:** `docs/components/com_kickbannerstats/sidebar.json`
-
-```json
-[
-  {
-    "text": "KickBannerStats",
-    "items": [
-      { "text": "Einführung", "link": "/components/com_kickbannerstats/" },
-      { "text": "Architektur", "link": "/components/com_kickbannerstats/architecture" },
-      { "text": "Backend Nutzung", "link": "/components/com_kickbannerstats/backend" },
-      { "text": "API Integration", "link": "/components/com_kickbannerstats/api-integration" },
-      { "text": "Looker Connector Code", "link": "/components/com_kickbannerstats/looker-connector" }
-    ]
-  }
-]
-
-```
-
-### Warum das smart ist:
-
-Der Code oben (`getData`) verarbeitet bereits die Datumsfilter (`filter[begin]`, `filter[end]`) von Looker Studio. Das heißt, wenn der User im Dashboard oben rechts den Zeitraum ändert, fragt Looker Studio deine Joomla-API **nur genau nach diesem Zeitraum**. Das ist extrem performant!
