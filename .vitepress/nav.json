@@ -13,5 +13,10 @@
         "text": "Kick Consent Manager",
         "link": "/kick-consent-manager/",
         "activeMatch": "/kickconsentmanager/"
+    },
+    {
+        "text": "KickBannerStats",
+        "link": "/components/com_kickbannerstats/",
+        "activeMatch": "/components/com_kickbannerstats/"
     }
 ]
