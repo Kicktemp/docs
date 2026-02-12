@@ -1,0 +1,21 @@
+{
+  "text": "KickBannerStats",
+  "items": [
+    {
+      "text": "Einführung",
+      "link": "/components/com_kickbannerstats/"
+    },
+    {
+      "text": "Architektur",
+      "link": "/components/com_kickbannerstats/architecture"
+    },
+    {
+      "text": "Backend Nutzung",
+      "link": "/components/com_kickbannerstats/backend"
+    },
+    {
+      "text": "API Integration",
+      "link": "/components/com_kickbannerstats/api-integration"
+    }
+  ]
+}
