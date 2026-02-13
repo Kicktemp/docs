@@ -44,7 +44,8 @@ Das Dashboard bietet Ihnen einen schnellen Überblick über die Performance Ihre
 * **Impressionen:** Wie oft wurden Banner im gewählten Zeitraum geladen/angezeigt.
 * **Klicks:** Wie oft wurde tatsächlich auf Banner geklickt.
 * **CTR (Click-Through-Rate):** Das Verhältnis von Klicks zu Impressionen in Prozent.
-  $$\text{CTR} = \frac{\text{Klicks}}{\text{Impressionen}} \times 100$$
+
+$$\text{CTR} = \frac{\text{Klicks}}{\text{Impressionen}} \times 100$$
 
 ### Die Top-Listen
 Darunter finden Sie zwei Tabellen, die Ihnen helfen, Ausreißer (positiv wie negativ) schnell zu erkennen:
