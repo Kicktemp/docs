@@ -1,12 +1,18 @@
 import { defineConfig } from 'vitepress';
 import Nav from './nav.json';
 import Sidebar from './sidebar';
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'Kicktemp',
     description: 'Anleitungen und Dokumentationen für Kicktemp.shop Erweiterungen.',
     srcDir: 'src',
+    markdown: {
+        config: (md) => {
+            md.use(mathjax3)
+        }
+    },
     outDir: 'dist',
     cleanUrls: true,
     srcExclude: ['**/_partials/*.md'],
