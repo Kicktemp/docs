@@ -174,9 +174,9 @@ Diese Datei steuert die Berechtigungen.
     "https://www.ihre-domain.de/"
   ],
   "dataStudio": {
-    "name": "Besser-im-Blick Banner Stats Connector",
+    "name": "Kicktemp Banner Stats Connector",
     "logoUrl": "https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png",
-    "company": "Besser im Blick",
+    "company": "Your Company",
     "addonUrl": "https://ihre-domain.de",
     "supportUrl": "https://ihre-domain.de",
     "description": "Importiert Banner-Statistiken (Impressions & Clicks) aus Joomla für Looker Studio Reports."

@@ -58,8 +58,8 @@ Sie können die Daten serverseitig filtern, um die Payload klein zu halten:
         "client_id": 13,
         "impressions": 1319,
         "clicks": 3,
-        "banner_name": "Musical Kids Amulett",
-        "client_name": "besser-im-blick",
+        "banner_name": "KickBannerStats",
+        "client_name": "kicktemp",
         "updated_at": "2026-02-13 03:00:00"
     },
     {
@@ -68,8 +68,8 @@ Sie können die Daten serverseitig filtern, um die Payload klein zu halten:
         "client_id": 13,
         "impressions": 41324,
         "clicks": 38,
-        "banner_name": "Musical Kids Amulett",
-        "client_name": "besser-im-blick",
+        "banner_name": "KickBannerStats",
+        "client_name": "kicktemp",
         "updated_at": "2026-02-13 03:00:00"
     }
 ]
