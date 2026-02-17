@@ -1,0 +1,25 @@
+{
+  "text": "KickBannerStats",
+  "items": [
+    {
+      "text": "Einführung",
+      "link": "/plugins/plg-task-kickimportinstagram/"
+    },
+    {
+      "text": "Architektur",
+      "link": "/plugins/plg-task-kickimportinstagram/architecture"
+    },
+    {
+      "text": "Backend Nutzung",
+      "link": "/plugins/plg-task-kickimportinstagram/backend"
+    },
+    {
+      "text": "API Integration",
+      "link": "/plugins/plg-task-kickimportinstagram/api-integration"
+    },
+    {
+      "text": "Looker Connector Code",
+      "link": "/plugins/plg-task-kickimportinstagram/looker-connector"
+    }
+  ]
+}
