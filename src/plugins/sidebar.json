@@ -45,5 +45,15 @@
                 "link": "/conclusion"
             }
         ]
+    },
+    {
+        "text": "Kick Import Instagram",
+        "base": "/plugins/plg-task-kickimportinstagram",
+        "items": [
+            {
+                "text": "Übersicht",
+                "link": "/"
+            }
+        ]
     }
 ]
