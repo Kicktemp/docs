@@ -1,0 +1,67 @@
+{
+  "text": "Kick Consent Manager",
+  "items": [
+    {
+      "text": "Einführung",
+      "link": "/components/com_kickconsentmanager/"
+    },
+    {
+      "text": "Installation & Erste Schritte",
+      "link": "/components/com_kickconsentmanager/getting-started"
+    },
+    {
+      "text": "Plugins",
+      "link": "/components/com_kickconsentmanager/plugins"
+    },
+    {
+      "text": "Backend-Übersicht",
+      "link": "/components/com_kickconsentmanager/backend"
+    },
+    {
+      "text": "Konfiguration",
+      "link": "/components/com_kickconsentmanager/configuration"
+    },
+    {
+      "text": "Inhalte verwalten",
+      "items": [
+        {
+          "text": "Service-Kategorien",
+          "link": "/components/com_kickconsentmanager/categories"
+        },
+        {
+          "text": "Services",
+          "link": "/components/com_kickconsentmanager/services"
+        },
+        {
+          "text": "Cookies",
+          "link": "/components/com_kickconsentmanager/cookies"
+        },
+        {
+          "text": "Scripts",
+          "link": "/components/com_kickconsentmanager/scripts"
+        }
+      ]
+    },
+    {
+      "text": "Auswertungen",
+      "items": [
+        {
+          "text": "Einwilligungen",
+          "link": "/components/com_kickconsentmanager/consents"
+        },
+        {
+          "text": "Statistiken",
+          "link": "/components/com_kickconsentmanager/statistics"
+        }
+      ]
+    },
+    {
+      "text": "Frontend",
+      "link": "/components/com_kickconsentmanager/frontend"
+    },
+    {
+      "text": "Architektur",
+      "link": "/components/com_kickconsentmanager/architecture"
+    }
+  ]
+}
