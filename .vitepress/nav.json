@@ -2,7 +2,7 @@
     {
         "text": "Kick YOOaddons",
         "link": "/kicktemp-addons-for-yootheme-pro/",
-        "activeMatch": "/kickyooaddons/"
+        "activeMatch": "//kicktemp-addons-for-yootheme-pro//"
     },
     {
         "text": "Plugins",
@@ -11,8 +11,8 @@
     },
     {
         "text": "Kick Consent Manager",
-        "link": "/kick-consent-manager/",
-        "activeMatch": "/kickconsentmanager/"
+        "link": "/components/com_kickconsentmanager/",
+        "activeMatch": "components/com_kickconsentmanager/"
     },
     {
         "text": "KickBannerStats",
