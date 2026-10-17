@@ -55,5 +55,35 @@
                 "link": "/"
             }
         ]
+    },
+    {
+        "text": "Kick Tracking Assistant",
+        "base": "/plugins/plg-system-kicktrackingassistant",
+        "items": [
+            {
+                "text": "Übersicht",
+                "link": "/"
+            },
+            {
+                "text": "CMP einrichten",
+                "link": "/cmp-einrichten"
+            },
+            {
+                "text": "GTM & Consent Mode v2",
+                "link": "/gtm-consent-mode"
+            },
+            {
+                "text": "Eigene Skripte blockieren",
+                "link": "/skripte"
+            },
+            {
+                "text": "Weitere Funktionen",
+                "link": "/weitere-funktionen"
+            },
+            {
+                "text": "Fehlersuche",
+                "link": "/fehlersuche"
+            }
+        ]
     }
 ]
