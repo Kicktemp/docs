@@ -21,7 +21,8 @@ Das Backend des KCM ist über **Komponenten → Kick Consent Manager** erreichba
 | **Cookies** | Cookie-Dokumentation |
 | **Scripts** | Tracking-Scripts verwalten |
 | **Einwilligungen** | Consent-Protokoll einsehen |
-| **Statistiken** | Opt-in/Opt-out-Auswertungen |
+| **Statistiken** | Auswertung pro Besucher: Verteilung, Zustimmung pro Service, Tagesverlauf, CSV-Export |
+| **Import / Export** | Konfiguration als Datei übertragen, siehe [Import / Export](./import-export) (nur Super User) |
 
 ---
 
@@ -34,6 +35,7 @@ Das Dashboard gibt einen schnellen Überblick über die aktuellen Datenstände:
 | Statistik-Tabelle | Anzahl der vorhandenen Services, Cookies, Kategorien, Scripts und Einwilligungen |
 | Versionsinformation | Aktuelle Komponentenversion und Datum |
 | Kontaktinformation | Kicktemp GmbH Kontaktdaten |
+| Toolbar | **Optionen**, **Import / Export** (nur Super User) und **Docs** |
 
 Das Dashboard dient primär als Einstiegspunkt und Schnellübersicht. Für tiefergehende Auswertungen navigieren Sie direkt zu den einzelnen Bereichen.
 

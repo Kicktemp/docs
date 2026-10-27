@@ -29,7 +29,7 @@ Externe Skripte (Tracking-Codes, Pixel, Tag Manager etc.) werden direkt im Backe
 Jede Einwilligung wird mit einer **UUID** persistent gespeichert. Der Nachweis der Einwilligung ist damit jederzeit abrufbar – wichtig für rechtliche Anforderungen.
 
 ### 📊 Statistiken
-Das Backend zeigt Opt-in- und Opt-out-Raten über konfigurierbare Zeiträume an, aufgeschlüsselt nach Services.
+Das Backend wertet die Einwilligungen pro Besucher aus: Verteilung („Alles“, „Auswahl“, „Nur notwendige“), Zustimmungsrate pro Kategorie und Service, Verlauf pro Tag, Filter nach Zeitraum und Konfigurationsversion sowie CSV-Export.
 
 ### 🎨 Vollständig anpassbares Design
 Farben, Schriften, Abstände, Overlay – alle visuellen Aspekte des Banners lassen sich über die Einstellungen ohne CSS-Kenntnisse anpassen.
@@ -40,6 +40,17 @@ Alle Texte des Banners (Überschrift, Beschreibungstext, Button-Beschriftungen) 
 ### 🔒 Cookie-Wall
 Optional kann das Banner als vollständige **Cookie-Wall** konfiguriert werden, die den Seiteninhalt blockiert, bis der Besucher eine Entscheidung trifft.
 
+### 🔄 Einwilligung jederzeit änderbar
+Ein optionaler Button am Fensterrand, ein Link mit `data-kcm-open` oder ein JavaScript-Aufruf öffnen die Cookie-Einstellungen erneut. Dazu kommen ein sichtbarer Tastaturfokus und eine Dialog-Auszeichnung für Screenreader.
+
+### 🔗 Google Tag Manager & Consent Mode v2
+
+Der Tag Manager lässt sich direkt einbinden. Der KCM setzt die Consent-Mode-Signale (Advanced Mode) und sendet die Entscheidung des Besuchers an Google. Mehr unter [Google Tag Manager & Consent Mode v2](./google-consent-mode).
+
+### 📦 Import / Export
+
+Kategorien, Services, Cookies, Scripts und Einstellungen lassen sich als Datei auf eine andere Website übertragen, wahlweise zusammenführend oder ersetzend. Mehr unter [Import / Export](./import-export).
+
 ### 🛠️ KCM DevKit
 Ein einblendbares Entwickler-Panel, das den aktuellen Consent-Status, alle gesetzten Services und den Cookie-Inhalt in Echtzeit anzeigt.
 
@@ -49,7 +60,7 @@ Ein einblendbares Entwickler-Panel, das den aktuellen Consent-Status, alle geset
 
 | Anforderung | Version |
 |---|---|
-| Joomla! | **5.x oder 6.x** |
+| Joomla! | **5.4 oder höher** (5.x und 6.x) |
 | PHP | 8.1 oder höher |
 | MySQL / MariaDB | 8.0 / 10.4 |
 
@@ -82,6 +93,8 @@ Service-Kategorien
 - **[Cookies](./cookies):** Cookie-Einträge pflegen.
 - **[Scripts](./scripts):** Tracking-Skripte verwalten.
 - **[Einwilligungen](./consents):** Consent-Protokoll einsehen.
-- **[Statistiken](./statistics):** Opt-in/Opt-out-Auswertungen.
+- **[Statistiken](./statistics):** Auswertung pro Besucher mit Verteilung, Zustimmungsrate pro Service, Tagesverlauf und CSV-Export.
+- **[Google Tag Manager & Consent Mode v2](./google-consent-mode):** Tag Manager einbinden und Signale steuern.
+- **[Import / Export](./import-export):** Konfiguration auf andere Websites übertragen.
 - **[Frontend](./frontend):** Banner und Cookie-Wall in der Praxis.
 - **[Architektur](./architecture):** Technische Übersicht für Entwickler.

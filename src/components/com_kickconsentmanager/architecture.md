@@ -13,6 +13,10 @@ Dieser Abschnitt richtet sich an Entwickler und beschreibt das Datenmodell, den 
 
 Der KCM legt fünf eigene Tabellen in der Joomla-Datenbank an:
 
+::: info Datumsfelder seit 1.5.0
+Datumsfelder ohne Wert (`expired` bei Einwilligungen, `publish_up` und `publish_down` bei Scripts) enthalten `NULL` statt `0000-00-00 00:00:00`. `created` und `modified` haben den Standardwert `CURRENT_TIMESTAMP`. Das Schema-Update `1.5.0.sql` wandelt bestehende Daten um. Der Grund: MySQL 8 im Strict-Mode akzeptiert das Nulldatum nicht.
+:::
+
 ### `#__kickconsentmanager_categories`
 
 Speichert die Service-Kategorien.
@@ -138,8 +142,8 @@ Kicktemp\Component\ConsentManager
 ```
 administrator/components/com_kickconsentmanager/
 ├── src/
-│   ├── Controller/        # DisplayController, CategoriesController, ...
-│   ├── Model/             # DashboardModel, CategoriesModel, ServiceModel, ...
+│   ├── Controller/        # DisplayController, CategoriesController, StatisticsController (CSV-Export), DesignController (Design zurücksetzen), TransferController (Import/Export), ...
+│   ├── Model/             # DashboardModel, CategoriesModel, ServiceModel, TransferModel (Export, Validierung, Import), ...
 │   ├── View/              # Categories/HtmlView, Services/HtmlView, ...
 │   ├── Table/             # CategoryTable, ServiceTable, CookieTable, ...
 │   ├── Field/             # KcmdevField, RegisterwebsiteField, ...
@@ -168,13 +172,56 @@ components/com_kickconsentmanager/
 └── tmpl/services/         # Template für Frontend-Ansicht
 ```
 
+### Plugins
+
+```
+plugins/system/kickconsentmanager/        # Namespace Kicktemp\Plugin\System\KickConsentManager
+├── services/provider.php                 # Service-Provider (DI)
+├── src/Extension/KickConsentManager.php  # Plugin-Klasse (SubscriberInterface)
+├── language/
+└── kickconsentmanager.xml
+
+plugins/task/kickconsentmanager/          # Namespace Kicktemp\Plugin\Task\KickConsentManager
+├── services/provider.php
+├── src/Extension/KickConsentManager.php  # Aufgabe „Einwilligungen bereinigen“
+├── forms/purge.xml
+├── language/
+└── kickconsentmanager.xml
+```
+
 ### Media
 
 ```
 media/com_kickconsentmanager/
-├── js/                    # Kompiliertes JavaScript (kcm.js, kcm.min.js)
-└── css/                   # Kompiliertes CSS
+├── joomla.asset.json      # Registrierung der Assets (Cache-Buster = Versionsnummer)
+├── js/
+│   ├── kcm.min.js         # Banner (Frontend)
+│   ├── kcmdevkit.min.js   # DevKit
+│   ├── registerwebsite.js # Website-Registrierung (Backend)
+│   ├── statistics.js      # Diagramme der Statistik
+│   ├── resetdesign.js     # Button „Design zurücksetzen“
+│   └── chart.min.js       # Chart.js für die Statistik
+└── css/
+    ├── kcm.min.css        # Layout „Banner“
+    ├── kcmwall.min.css    # Layout „Wall“
+    └── dev-kit.min.css    # DevKit
 ```
+
+Die Dateinamen enthalten **keine Versionsnummer** mehr. Der Cache-Buster (`?1.5.0`) wird von Joomla aus `joomla.asset.json` angehängt.
+
+| Asset-Name | Datei |
+|---|---|
+| `com_kickconsentmanager.kcm` | `js/kcm.min.js` |
+| `com_kickconsentmanager.kcmdevkit` | `js/kcmdevkit.min.js` (hängt von `kcm` ab) |
+| `com_kickconsentmanager.style.kcm` | `css/kcm.min.css` |
+| `com_kickconsentmanager.style.kcmwall` | `css/kcmwall.min.css` |
+| `com_kickconsentmanager.style.devkit` | `css/dev-kit.min.css` |
+| `com_kickconsentmanager.chart` | `js/chart.min.js` |
+| `com_kickconsentmanager.statistics` | `js/statistics.js` (hängt von `chart` ab) |
+| `com_kickconsentmanager.resetdesign` | `js/resetdesign.js` |
+| `com_kickconsentmanager.registerwebsite` | `js/registerwebsite.js` |
+
+Eigener Code, der diese Dateien einbinden will, nutzt am besten den WebAssetManager (`$wa->getRegistry()->addExtensionRegistryFile('com_kickconsentmanager'); $wa->useScript('com_kickconsentmanager.kcm');`).
 
 ---
 
@@ -198,6 +245,10 @@ media/com_kickconsentmanager/
    - Empfängt POST-Request
    - Schreibt Eintrag in #__kickconsentmanager_consents
    - Gibt UUID zurück
+        ↓
+5. Später: Einwilligung ändern
+   - Button zum erneuten Öffnen, data-kcm-open oder KICK_KCM.showPreferenceCenter()
+   - Preference Center mit gespeicherter Auswahl, danach wieder Schritt 3 und 4
 ```
 
 ---

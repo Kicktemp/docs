@@ -75,15 +75,64 @@ Eine Cookie-Wall, die den Zugang zur Website vollständig sperrt, ist in bestimm
 
 ---
 
-## Einwilligung widerrufen
+## Einwilligung ändern oder widerrufen
 
-Der Besucher kann seine Einwilligung jederzeit ändern. Hierfür gibt es mehrere Möglichkeiten:
+Besucher können ihre Einwilligung jederzeit ändern. Dafür gibt es mehrere Wege, die sich kombinieren lassen.
 
-**Über einen erneuten Aufruf des Banners:**
-Auf Ihrer Datenschutzseite (oder per Klick auf einen von Ihnen platzierten Link) kann der Besucher das Banner erneut öffnen. Empfohlener Ansatz: Ein Link oder Button mit der CSS-Klasse `kcm-js-open` oder eine JavaScript-Funktion.
+### Button zum erneuten Öffnen (empfohlen)
 
-**Über den Browser:**
+Nach der Entscheidung blendet der KCM auf Wunsch einen kleinen runden **Cookie-Button** am Fensterrand ein. Ein Klick öffnet das Preference Center mit den gespeicherten Einstellungen. Position, Farben, Größe und Abstand sind einstellbar, siehe [Konfiguration](./configuration#button-zum-erneuten-offnen). Die Option ist standardmäßig ausgeschaltet.
+
+![Button zum erneuten Öffnen](./assets/frontend_reopen.png)
+
+- Der Button ist ein echter `<button>` mit Beschriftung für Screenreader und per Tab erreichbar.
+- **Escape** schließt ein auf diesem Weg geöffnetes Banner, ohne die gespeicherte Einwilligung zu ändern. (Im normalen Banner lehnt Escape alle optionalen Cookies ab.)
+- Nach „Speichern“, „Alle akzeptieren“ oder Escape springt der Fokus auf den Button zurück.
+
+### Eigener Link oder Button
+
+Jedes Element mit dem Attribut `data-kcm-open` oder der Klasse `kcm-js-open` öffnet das Preference Center:
+
+```html
+<a href="#" data-kcm-open>Cookie-Einstellungen ändern</a>
+<button type="button" class="kcm-js-open">Cookie-Einstellungen</button>
+```
+
+Das funktioniert auch bei Elementen, die erst nach dem Laden der Seite eingefügt werden. Für ein Footer-Menü legen Sie einen Menüpunkt vom Typ **URL** mit der Adresse `#` an und tragen bei **Link-CSS-Klasse** `kcm-js-open` ein.
+
+### JavaScript
+
+Eigener Code kann `window.KICK_KCM.showPreferenceCenter()` aufrufen. Alle Funktionen stehen in der [JavaScript-API](./javascript-api).
+
+### Cookie-Erklärungsseite
+
+Auch die [Cookie-Erklärungsseite](#cookie-erklarungsseite-optional) erlaubt es, die Auswahl zu ändern. Sie ist dafür aber nicht mehr nötig.
+
+### Über den Browser
+
 Durch Löschen aller Cookies im Browser wird der `kcm_data`-Cookie entfernt, und das Banner erscheint beim nächsten Besuch erneut.
+
+---
+
+## Barrierefreiheit
+
+Der Banner ist für die Bedienung per Tastatur und mit Screenreadern ausgelegt. Geprüft wurden Tastatur und Accessibility-Eigenschaften im Browser, nicht aber mit einem Screenreader und nicht gegen eine formale Konformitätsprüfung (WCAG, BFSG).
+
+| Bereich | Verhalten |
+|---|---|
+| Dialog | Banner und Einstellungen sind Dialoge (`role="dialog"`, `aria-modal`) mit Namen über die Überschrift |
+| Fokus | Beim Öffnen springt der Fokus in den Dialog, nach dem Schließen zurück auf den Button zum erneuten Öffnen |
+| Tab-Reihenfolge | Der Fokus bleibt im geöffneten Dialog (Tab und Shift+Tab laufen im Kreis), auch in der erweiterten Ansicht |
+| Escape | Schließt den Dialog. Beim ersten Besuch gilt das als „Nur notwendige“, beim erneuten Öffnen bleibt die gespeicherte Auswahl |
+| Schalter | Jeder Schalter ist per Tastatur erreichbar (Leertaste schaltet), hat den Namen seiner Kategorie bzw. seines Services und zeigt den Fokus |
+| Aufklappbereiche | „Cookie-Details“, Services und Cookies sind Buttons mit `aria-expanded` und per Enter oder Leertaste bedienbar |
+| Bewegung | Mit `prefers-reduced-motion` entfallen die Animationen der Schalter und des Buttons |
+
+::: tip Farben
+Die Standardfarben erfüllen die WCAG-Stufe AA: Text hat mindestens 4,5:1 Kontrast (Standard-Blau `#0077b3` mit weißem Text 4,9:1), Schalter und Rahmen mindestens 3:1. Das gilt für das Banner- und das Wall-Layout. Wenn Sie im Tab „Design“ eigene Farben setzen, müssen Sie den Kontrast selbst prüfen. Beim Update bleiben bereits gespeicherte Farben unverändert. Mit **Design auf Standard zurücksetzen** übernehmen Sie die neuen Standardwerte.
+:::
+
+Nicht abgedeckt: Der Hintergrund der Website ist bei geöffnetem Dialog nicht inaktiv gesetzt (`inert`). Die Tastatur bleibt im Dialog, das virtuelle Cursor-Verhalten mancher Screenreader kann ihn dennoch verlassen.
 
 ---
 
@@ -111,6 +160,28 @@ Wenn der Browser des Nutzers Cookies vollständig deaktiviert hat, kann der KCM 
 
 ---
 
-## Frontend-Menüpunkt
+## Cookie-Erklärungsseite (optional)
 
-Der KCM registriert optional einen Frontend-Menüpunkt, der eine Übersicht aller Services mit deren Cookie-Details anzeigt. Dieser Menüpunkt kann als eigenständige „Cookie-Erklärungsseite" verwendet werden und ist über **Menüs → Menüpunkt hinzufügen → Kick Consent Manager** erreichbar.
+Die Komponente bringt eine Frontend-Ansicht mit, die als eigene Seite alle Service-Kategorien, Services und Cookies samt Informationen auflistet. Besucher können dort ihre Auswahl auch speichern.
+
+**Wofür die Seite gut ist**
+
+- Sie hat eine **eigene, verlinkbare URL**. Das ist praktisch für die Datenschutzerklärung, das Impressum oder einen Link im Banner.
+- Sie dient als **vollständige Cookie-Erklärung** für Besucher und Prüfer, unabhängig davon, ob das Banner gerade offen ist.
+
+**Wofür sie nicht mehr nötig ist**
+
+Um die Einwilligung zu ändern, brauchen Besucher die Seite nicht mehr. Dafür gibt es den [Button zum erneuten Öffnen](#button-zum-erneuten-offnen-empfohlen) oder einen eigenen Link. Wer keine eigene Erklärungsseite möchte, legt einfach keinen Menüpunkt an.
+
+**Einrichten**
+
+1. **Menüs → Menü wählen → Neuer Menüpunkt**.
+2. Menüpunkt-Typ: **Kick Consent Manager → Services**.
+3. Titel vergeben (z. B. „Cookie-Erklärung“) und speichern.
+4. Optional im Tab „Links“ der Komponenten-Einstellungen mit diesem Menüpunkt verknüpfen, damit die Seite im Banner verlinkt ist.
+
+Die Überschrift und der Einleitungstext der Seite kommen aus den Übersetzungen (CPC-Texte).
+
+::: tip Auf dieser Seite ist das Overlay aus
+Auf der Cookie-Erklärungsseite und auf Seiten, die im Banner verlinkt sind, schaltet der KCM das Overlay ab und zeigt statt der Cookie-Wall das normale Banner. So können Besucher den Text lesen, bevor sie sich entscheiden.
+:::

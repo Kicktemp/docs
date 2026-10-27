@@ -16,7 +16,11 @@ Der Kick Consent Manager wird als Standard-Joomla-Erweiterungspaket ausgeliefert
 Nach erfolgreicher Installation erscheint der KCM im Backend-Menü unter **Komponenten → Kick Consent Manager**.
 
 ::: tip Joomla 5 & 6 ready
-Der KCM ist speziell für **Joomla 5 und Joomla 6** entwickelt und vollständig kompatibel.
+Der KCM läuft ab **Joomla 5.4** und unter **Joomla 6** (PHP 8.1 oder höher). Das Backward-Compatibility-Plugin von Joomla 6 wird nicht benötigt.
+:::
+
+::: info Update von einer älteren Version
+Wenn Sie von 1.4.x auf 1.5 aktualisieren, lesen Sie vorher die [Update-Hinweise](./update-1-5).
 :::
 
 ---
@@ -99,6 +103,12 @@ Unter **Scripts** legen Sie die Tracking-Codes an. Der KCM übernimmt das beding
 ### Schritt 6: Frontend testen
 
 Rufen Sie Ihre Website im Inkognito-Browser auf. Das Cookie-Banner sollte erscheinen. Über das **KCM DevKit** (in den Einstellungen aktivierbar) können Sie den Consent-Status in Echtzeit prüfen.
+
+Ist der [Button zum erneuten Öffnen](./configuration#button-zum-erneuten-offnen) aktiviert, erscheint er nach der Entscheidung am Fensterrand. Prüfen Sie, dass er die Einstellungen mit Ihrer gespeicherten Auswahl öffnet.
+
+### Schritt 7 (optional): Cookie-Erklärungsseite anlegen
+
+Wenn Sie eine eigene Seite mit allen Services und Cookies verlinken möchten, legen Sie einen Menüpunkt vom Typ **Kick Consent Manager → Services** an. Details stehen unter [Cookie-Erklärungsseite](./frontend#cookie-erklarungsseite-optional). Für die Einwilligung selbst brauchen Sie diese Seite nicht.
 
 ---
 

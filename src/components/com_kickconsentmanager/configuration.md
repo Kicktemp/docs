@@ -5,7 +5,7 @@ description: Alle Einstellungen des Kick Consent Managers im Überblick
 
 # Konfiguration
 
-Die Konfiguration des KCM erfolgt über den **Optionen**-Button im Backend (oben rechts in der Toolbar). Die Einstellungen sind in neun Tabs gegliedert.
+Die Konfiguration des KCM erfolgt über den **Optionen**-Button im Backend (oben rechts in der Toolbar). Die Einstellungen sind in zehn Tabs gegliedert.
 
 ---
 
@@ -51,6 +51,20 @@ Im Vorschau-Modus wird das Banner für alle Besucher angezeigt, auch wenn bereit
 
 Blendet einen dezenten „Powered by Kick Consent Manager"-Link am unteren Rand des Banners ein.
 
+### Button zum erneuten Öffnen
+
+- Standard: `Nein`
+
+Zeigt nach der Entscheidung einen runden Button mit Cookie-Icon am Fensterrand. Über ihn öffnen Besucher die Cookie-Einstellungen jederzeit wieder und können ihre Einwilligung ändern. Solange das Banner offen ist, wird der Button ausgeblendet.
+
+- **Position:** unten links (Standard), unten rechts, oben links oder oben rechts.
+- **Farben, Größe, Abstand:** Hintergrund- und Icon-Farbe, die Größe des Buttons (24–96 px, Standard 44) und der Abstand zum Fensterrand (0–200 px, Standard 16) werden im Tab „Design" eingestellt. Das Icon skaliert mit der Button-Größe.
+- **Beschriftung:** Tooltip und Screenreader-Text, pro Sprache im Tab „Übersetzungen" („Beschriftung des Buttons zum erneuten Öffnen").
+- **Escape:** Ein über den Button geöffnetes Banner wird mit Escape nur geschlossen, die gespeicherte Einwilligung bleibt unverändert.
+- **Fokus:** Nach dem Schließen oder Speichern springt der Tastaturfokus auf den Button zurück.
+
+Alternativ lässt sich das Banner mit `KICK_KCM.showPreferenceCenter()` öffnen, z. B. über einen Menülink `javascript:KICK_KCM.showPreferenceCenter()`.
+
 ---
 
 ## Tab 2: Links
@@ -73,6 +87,10 @@ Das Subformular erlaubt pro Sprache einen eigenen Link:
 Legen Sie für jede aktive Sprache einen eigenen Link-Eintrag an. Der KCM wählt automatisch den passenden Link basierend auf der aktuellen Seitensprache.
 :::
 
+::: tip Cookie-Erklärungsseite verlinken
+Wenn Sie eine [Cookie-Erklärungsseite](./frontend#cookie-erklarungsseite-optional) angelegt haben, verknüpfen Sie hier einen Eintrag mit diesem Menüpunkt. Die Seite ist optional.
+:::
+
 ---
 
 ## Tab 3: Design
@@ -80,6 +98,12 @@ Legen Sie für jede aktive Sprache einen eigenen Link-Eintrag an. Der KCM wählt
 ![Design-Einstellungen](./assets/config-tab3-design.png)
 
 Alle visuellen Aspekte des Banners sind hier konfigurierbar, ohne CSS-Kenntnisse.
+
+### Design zurücksetzen
+
+Der Button **Design auf Standard zurücksetzen** ganz oben im Tab setzt **alle Einstellungen dieses Tabs** (Layout, Overlay, Farben, Schriften, Buttons, Schalter, Fokusring und den Button zum erneuten Öffnen) auf die Standardwerte zurück. Andere Tabs wie Basis, Links, Übersetzungen oder Vorlagen bleiben unverändert.
+
+Der Button verlangt einen zweiten Klick zur Bestätigung (innerhalb von 5 Sekunden), danach lädt die Seite neu. Nach dem Zurücksetzen gelten wieder die Werte, die in den Feldern als Voreinstellung stehen. Dafür brauchen Sie das Recht „Konfiguration“ (`core.admin`).
 
 ### Layout
 
@@ -115,8 +139,8 @@ Wenn aktiviert, wird der Seitenhintergrund beim Anzeigen des Banners abgedunkelt
 | Schriftart | `Helvetica Neue, Arial, sans-serif` | Hauptschrift |
 | Schriftgröße | `16px` | Basis-Schriftgröße |
 | Textfarbe | `#262626` | Fließtext |
-| Linkfarbe | `#009ee3` | Links im Bannertext |
-| Untere Linkfarbe | `#aaaaaa` | Datenschutz-/Impressums-Links |
+| Linkfarbe | `#0077b3` | Links im Bannertext |
+| Untere Linkfarbe | `#595959` | Datenschutz-/Impressums-Links |
 | Service-Rahmenfarbe | `#ccc` | Rahmen um Service-Einträge im CPC |
 
 ### Überschrift
@@ -124,23 +148,23 @@ Wenn aktiviert, wird der Seitenhintergrund beim Anzeigen des Banners abgedunkelt
 | Feld | Standard |
 |---|---|
 | Überschrift-Schriftart | `Helvetica Neue, Arial, sans-serif` |
-| Überschrift-Farbe | `#009ee3` |
+| Überschrift-Farbe | `#0077b3` |
 
 ### Kategorien
 
 | Feld | Standard |
 |---|---|
 | Kategorien-Hintergrundfarbe | `rgba(255,255,255,1)` |
-| Kategorien-Überschrift-Farbe | `#009ee3` |
+| Kategorien-Überschrift-Farbe | `#0077b3` |
 | Kategorien-Textfarbe | `#262626` |
 
 ### Buttons (Speichern / Alle akzeptieren)
 
 | Feld | Standard |
 |---|---|
-| Hintergrundfarbe | `#009ee3` |
+| Hintergrundfarbe | `#0077b3` |
 | Textfarbe | `#ffffff` |
-| Rahmenfarbe | `#009ee3` |
+| Rahmenfarbe | `#0077b3` |
 | Rahmenbreite | `2px` |
 | Schriftgröße | `18px` |
 | Schriftstärke | `bold` |
@@ -150,8 +174,8 @@ Wenn aktiviert, wird der Seitenhintergrund beim Anzeigen des Banners abgedunkelt
 | Feld | Standard |
 |---|---|
 | Hintergrundfarbe (Hover) | `#ffffff` |
-| Rahmenfarbe (Hover) | `#009ee3` |
-| Textfarbe (Hover) | `#009ee3` |
+| Rahmenfarbe (Hover) | `#0077b3` |
+| Textfarbe (Hover) | `#0077b3` |
 
 ### Button „Notwendige akzeptieren"
 
@@ -169,6 +193,18 @@ Steuert die Ein/Aus-Schalter für einzelne Kategorien/Services im CPC.
 | Ein (On) | Hintergrundfarbe, Marker-Farbe |
 | Intermediär | Hintergrundfarbe, Marker-Farbe |
 | Deaktiviert | Hintergrundfarbe, Marker-Farbe |
+
+### Barrierefreiheit / Fokusring
+
+- Standard: `Ja`
+
+**Browser-Fokusring aktivieren**: Mit `Ja` verwendet das Banner (und der Button zum erneuten Öffnen) den normalen Fokusring des Browsers, wenn jemand per Tastatur navigiert. Mit `Nein` wird er komplett unterdrückt.
+
+::: warning Nicht empfohlen
+Ohne sichtbaren Fokus ist die Seite für Tastaturnutzer kaum bedienbar (WCAG 2.4.7). Schalten Sie den Fokusring nur aus, wenn Ihr Theme einen eigenen sichtbaren Fokus liefert.
+:::
+
+Das Banner wird für Screenreader als Dialog (`role="dialog"`) mit der Überschrift als Beschriftung ausgezeichnet. Mit aktivem Overlay kommt `aria-modal="true"` dazu.
 
 ---
 
@@ -230,7 +266,25 @@ Hier können globale Informationsfeld-Vorlagen für **Services** und **Cookies**
 
 ---
 
-## Tab 6: KCM deaktivieren (Menüpunkte)
+## Tab 6: Google
+
+![Google-Einstellungen](./assets/config-tab6-google.png)
+
+Hier binden Sie den **Google Tag Manager** ein und steuern den **Google Consent Mode v2** (Advanced Mode). Der KCM setzt die Standardwerte vor dem Tag Manager und sendet nach der Entscheidung des Besuchers das Update.
+
+| Bereich | Inhalt |
+|---|---|
+| Google Tag Manager | GTM-ID, Consent Mode an/aus, noscript-Iframe, URL-Passthrough, Ads Data Redaction, Wartezeit |
+| Standardwerte der Signale | `ad_storage`, `analytics_storage` und fünf weitere Signale sowie eigene Signale |
+| Zuordnung der KCM-Kategorien | Welche Kategorie welches Signal freigibt |
+
+![Zuordnung der KCM-Kategorien](./assets/config-tab6-google-mapping.png)
+
+Alle Einstellungen, Voreinstellungen und der Ablauf stehen unter [Google Tag Manager & Consent Mode v2](./google-consent-mode).
+
+---
+
+## Tab 7: KCM deaktivieren (Menüpunkte)
 
 ![KCM-Disable-Einstellungen](./assets/config-tab6-kcmdisablemenu.png)
 
@@ -257,7 +311,7 @@ Der Modus „Alle Scripts" lädt Scripts ohne Einwilligung des Nutzers. Verwende
 
 ---
 
-## Tab 7: KCM DevKit
+## Tab 8: KCM DevKit
 
 ![DevKit-Einstellungen](./assets/config-tab7-kcmdevkit.png)
 
@@ -280,7 +334,7 @@ Das DevKit sollte in der Produktion **deaktiviert** bleiben. Es ist ausschließl
 
 ---
 
-## Tab 8: Versionen (History)
+## Tab 9: Versionen (History)
 
 ![History-Einstellungen](./assets/config-tab8-history.png)
 
@@ -295,7 +349,7 @@ Wenn aktiviert, wird zu jedem Service, Cookie, Script und jeder Kategorie eine V
 
 ---
 
-## Tab 9: Bei Kicktemp registrieren
+## Tab 10: Bei Kicktemp registrieren
 
 ![Registrierungs-Einstellungen](./assets/config-tab9-registertokicktempshop.png)
 

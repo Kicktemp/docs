@@ -141,6 +141,12 @@ Tracking-Codes dürfen **nicht** manuell im Joomla-Template (z.B. in `index.php`
 
 ---
 
+## Google Tag Manager
+
+Für den Google Tag Manager mit Consent Mode v2 gibt es den Tab **Google** in den Optionen. Er lädt den Container sofort und steuert die Einwilligung über Signale (siehe [Google Tag Manager & Consent Mode v2](./google-consent-mode)). Legen Sie den Tag Manager dann **nicht** zusätzlich als Script an.
+
+---
+
 ## Status und Zeitsteuerung
 
 Scripts unterstützen:

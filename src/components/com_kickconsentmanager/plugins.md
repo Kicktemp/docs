@@ -16,13 +16,26 @@ Der Kick Consent Manager wird mit zwei Joomla-Plugins ausgeliefert, die nach der
 Das System-Plugin ist das Bindeglied zwischen der Komponente und dem Joomla-Frontend. Es greift in jeden Seitenaufruf ein und übernimmt:
 
 - Einlesen der KCM-Konfiguration (Services, Übersetzungen, Design-Variablen)
-- Injizieren der KCM-JavaScript- und CSS-Dateien in den `<head>`
+- Einbinden der KCM-JavaScript- und CSS-Dateien über den Joomla **WebAssetManager** (die Versionsnummer dient als Cache-Buster)
 - Übergabe der Konfiguration als JSON an das Browser-Script
 - Kontrolle, welche Scripts geladen werden:
   - Bei **neuen Besuchern**: Banner-HTML in die Seite einbetten
   - Bei **bekannten Besuchern**: Scripts der zugestimmten Services direkt in `<head>` oder `</body>` injizieren
 - Auswertung der Seiten-Ausnahmen (konfigurierbar im Tab „KCM deaktivieren")
 - Einbinden des KCM DevKits (wenn in den Einstellungen aktiviert)
+
+### Technischer Aufbau
+
+Das Plugin ist ein modernes Joomla-Plugin mit Namespace `Kicktemp\Plugin\System\KickConsentManager`, Service-Provider (`services/provider.php`) und `SubscriberInterface`. Es braucht kein Backward-Compatibility-Plugin.
+
+| Event | Aufgabe |
+|---|---|
+| `onBeforeCompileHead` | Konfiguration als JSON, Scripts, Stylesheets und CSS-Variablen einbinden |
+| `onAfterRender` | Scripts, die am Seitenende stehen sollen, vor `</body>` einfügen |
+| `onAjaxRegisterWebsiteKCM` | Website registrieren (nur mit gültigem CSRF-Token und Recht `core.admin` für die Komponente) |
+| `onInstallerBeforePackageDownload` | Domain und Versionen an die Download-URL des Pakets anhängen |
+
+Die Dateien `kcm.min.js`, `kcm.min.css` usw. sind als Assets in `media/com_kickconsentmanager/joomla.asset.json` registriert (siehe [Architektur](./architecture#media)).
 
 ### Aktivierung
 
@@ -55,9 +68,17 @@ Plugin aktivieren und speichern.
 Die Einwilligungstabelle `#__kickconsentmanager_consents` wächst mit jedem Seitenbesuch. Das Task-Plugin bereinigt diese Tabelle nach den folgenden Regeln:
 
 - Lösche alle Einträge, bei denen das **`expired`-Datum überschritten** ist.
-- Lösche alle Einträge ohne Ablaufdatum, die **älter als der konfigurierte Wert in Tagen** sind.
+- Lösche alle Einträge ohne Ablaufdatum (`expired` ist `NULL`), die **älter als der konfigurierte Wert in Tagen** sind.
+
+::: info Seit 1.5.0
+Einträge ohne Ablaufdatum haben `NULL` im Feld `expired`. Früher stand dort das Nulldatum `0000-00-00 00:00:00`. Das Update wandelt vorhandene Einträge um.
+:::
 
 Der Tages-Parameter kann maximal so groß sein wie die in den Komponenteneinstellungen hinterlegte Cookie-Laufzeit (Standard: 90 Tage). Ein höherer Wert wird automatisch auf diesen Maximalwert gekappt.
+
+### Update von älteren Versionen
+
+Bis 1.4.x bestanden beide Plugins aus einer einzelnen Datei `kickconsentmanager.php`. Beim Update auf 1.5 entfernt das Installationsskript diese alte Datei automatisch. Die Plugins bleiben aktiviert.
 
 ### Geplante Aufgabe einrichten
 

@@ -10,6 +10,10 @@
       "link": "/components/com_kickconsentmanager/getting-started"
     },
     {
+      "text": "Update auf 1.5",
+      "link": "/components/com_kickconsentmanager/update-1-5"
+    },
+    {
       "text": "Plugins",
       "link": "/components/com_kickconsentmanager/plugins"
     },
@@ -20,6 +24,14 @@
     {
       "text": "Konfiguration",
       "link": "/components/com_kickconsentmanager/configuration"
+    },
+    {
+      "text": "Google Tag Manager & Consent Mode",
+      "link": "/components/com_kickconsentmanager/google-consent-mode"
+    },
+    {
+      "text": "Import / Export",
+      "link": "/components/com_kickconsentmanager/import-export"
     },
     {
       "text": "Inhalte verwalten",
@@ -60,8 +72,21 @@
       "link": "/components/com_kickconsentmanager/frontend"
     },
     {
-      "text": "Architektur",
-      "link": "/components/com_kickconsentmanager/architecture"
+      "text": "Technisches",
+      "items": [
+        {
+          "text": "Architektur",
+          "link": "/components/com_kickconsentmanager/architecture"
+        },
+        {
+          "text": "JavaScript-API",
+          "link": "/components/com_kickconsentmanager/javascript-api"
+        },
+        {
+          "text": "Entwicklung",
+          "link": "/components/com_kickconsentmanager/development"
+        }
+      ]
     }
   ]
 }

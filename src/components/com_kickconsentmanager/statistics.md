@@ -1,88 +1,112 @@
 ---
 title: Statistiken
-description: Consent-Statistiken und Opt-in/Opt-out-Raten im Kick Consent Manager auswerten
+description: Einwilligungs-Statistik pro Besucher mit Verteilung, Zustimmungsrate pro Service, Tagesverlauf und CSV-Export
 ---
 
 # Statistiken
 
-Der Bereich **Statistiken** gibt einen Überblick über das Einwilligungsverhalten der Besucher: Wie viele stimmen zu? Wie viele lehnen ab? Welche Services werden am häufigsten akzeptiert?
+Der Bereich **Statistiken** zeigt, wie Ihre Besucher mit dem Banner umgehen: Wie viele stimmen allem zu? Wie viele lehnen alles Optionale ab? Welche Services werden wie oft akzeptiert? Und wie entwickelt sich das über die Zeit?
 
 ![Statistiken](./assets/statistiken.png)
 
-## Überblick
+---
 
-Die Statistik-Ansicht aggregiert die Daten aus der Einwilligungstabelle und zeigt:
+## So wird gezählt
 
-- **Gesamtanzahl** der gespeicherten Einwilligungsentscheidungen im gewählten Zeitraum
-- **Opt-in-Prozent**: Anteil der Nutzer, die einem Service zugestimmt haben
-- **Opt-out-Prozent**: Anteil der Nutzer, die einen Service abgelehnt haben
-- Aufschlüsselung **pro Service** über alle ausgewerteten Einwilligungen
+Jedes Speichern im Banner legt einen neuen Eintrag im [Einwilligungs-Protokoll](./consents) an. Wer seine Auswahl mehrmals ändert, hat deshalb mehrere Einträge. Die Statistik zählt **Besucher, nicht Einträge**:
+
+> Jeder Besucher (erkennbar an seiner UUID) zählt **einmal**, und zwar mit seiner **letzten Entscheidung im gewählten Zeitraum**.
+
+So verfälschen mehrfach speichernde Besucher die Prozente nicht. Die Zahl der Entscheidungen steht trotzdem daneben, damit Sie sehen, wie oft sich Besucher umentscheiden.
 
 ---
 
-## Zeitraum filtern
+## Kennzahlen
 
-Über die Filterwerkzeuge können Sie den Auswertungszeitraum eingrenzen:
+| Kennzahl | Bedeutung |
+|---|---|
+| **Besucher** | Anzahl verschiedener UUIDs im Zeitraum |
+| **Entscheidungen** | Anzahl aller gespeicherten Einträge im Zeitraum |
+| **Ø Entscheidungen pro Besucher** | Entscheidungen geteilt durch Besucher |
+| **Besucher mit Änderung** | Besucher, die im Zeitraum mehr als einmal gespeichert haben (Anzahl und Anteil) |
+
+### Verteilung der Besucher
+
+Die letzte Entscheidung jedes Besuchers wird einer von drei Gruppen zugeordnet. Maßgeblich sind die **optionalen Kategorien**, also alle veröffentlichten Kategorien, die nicht als „Notwendig“ markiert sind:
+
+| Gruppe | Bedeutung |
+|---|---|
+| **Alles akzeptiert** | Alle optionalen Kategorien wurden akzeptiert |
+| **Auswahl** | Mindestens eine, aber nicht alle optionalen Kategorien wurden akzeptiert |
+| **Nur notwendige** | Keine optionale Kategorie wurde akzeptiert |
+
+::: tip Auswahl ohne Häkchen
+Wer im Preference Center alle optionalen Kategorien abwählt und speichert, landet bei „Nur notwendige“, genau wie bei „Notwendige Cookies akzeptieren“. Früher wurde so eine Auswahl fälschlich als Zustimmung gezählt.
+:::
+
+### Zustimmung pro Kategorie und Service
+
+Die beiden Tabellen zeigen, wie viele der Besucher (und wie viel Prozent) eine Kategorie oder einen Service akzeptiert haben. Notwendige Kategorien und Services sind immer aktiv und werden deshalb ohne Rate angezeigt. Es erscheinen nur **veröffentlichte** Kategorien und Services.
+
+### Verlauf pro Tag
+
+Das Liniendiagramm zeigt pro Tag die Zahl der Besucher und der Entscheidungen. Tage ohne Eintrag werden mit 0 aufgefüllt. Die Tage beziehen sich auf **UTC** (so speichert Joomla die Zeitstempel).
+
+---
+
+## Filter
+
+![Statistik-Filter](./assets/statistics-list-filters.png)
 
 | Filter | Beschreibung |
 |---|---|
-| Heute | Nur Einwilligungen vom aktuellen Tag |
-| Gestern | Nur der gestrige Tag |
-| In der letzten Woche | Die letzten 7 Tage |
-| Im letzten Monat | Die letzten 30 Tage |
-| In den letzten 3 Monaten | 90-Tage-Fenster |
-| In den letzten 6 Monaten | 180-Tage-Fenster |
-| Im letzten Jahr | 365-Tage-Fenster |
-| Mehr als 1 Jahr her | Ältere Einträge |
-| Niemals | Keine Zeiteinschränkung (alle Daten) |
-| Eigener Zeitraum | Anfangsdatum und Enddatum manuell eingeben |
+| **Zeitraum** | Heute, Letzte 7 / 30 / 90 Tage, Letzte 12 Monate, Gesamter Zeitraum oder Eigener Zeitraum. Voreinstellung: Letzte 30 Tage. |
+| **Anfangs- und Enddatum** | Nur bei „Eigener Zeitraum“. Die Datumsangaben gelten in Ihrer Zeitzone, das Enddatum einschließlich des ganzen Tages. |
+| **Konfigurationsversion** | Wertet nur Entscheidungen einer bestimmten Cookie-Version aus (siehe [Konfigurationsversion](./configuration#konfigurationsversion)). |
+
+Alle Zahlen, Tabellen und das Diagramm richten sich nach den gewählten Filtern.
+
+::: warning Konfigurationsänderungen
+Erhöhen Sie die Konfigurationsversion, fragt der Banner alle Besucher erneut. Dieselben Besucher können dann in zwei Versionen auftauchen. Für einen sauberen Vergleich wählen Sie im Filter eine einzelne Konfigurationsversion.
+:::
 
 ---
 
-## Kennzahlen verstehen
+## CSV-Export
 
-### Opt-in-Rate
+Der Button **CSV exportieren** in der Werkzeugleiste lädt die Auswertung der aktuell gewählten Filter herunter:
 
-Der Prozentsatz der Nutzer, die einem bestimmten Service zugestimmt haben, bezogen auf alle Einwilligungsentscheidungen im Zeitraum.
-
-$$\text{Opt-in} = \frac{\text{Einwilligungen mit Zustimmung für Service X}}{\text{Alle Einwilligungsentscheidungen}} \times 100$$
-
-### Opt-out-Rate
-
-Entsprechend der Prozentsatz der Ablehnungen.
-
-### Interpretation
-
-- Eine niedrige Opt-in-Rate für Marketing-Services ist normal und rechtlich gewollt (informierte Einwilligung).
-- Stark steigende Opt-out-Raten können auf eine schlechte Banner-Usability oder mangelndes Vertrauen hindeuten.
-- Sehr niedrige Zahlen insgesamt können auf technische Probleme mit dem Banner hindeuten (z.B. Banner wird nicht angezeigt).
+- Zeitraum, Kennzahlen, Verteilung, Kategorien, Services und Tagesverlauf in einer Datei
+- UTF-8 mit BOM und Semikolon als Trennzeichen, damit Excel die Datei direkt richtig öffnet
+- Zahlen mit Dezimalkomma
 
 ---
 
 ## Datengrundlage
 
-Die Statistiken basieren auf der Tabelle `#__kickconsentmanager_consents`. Jeder Eintrag enthält im Feld `consents` ein JSON-Objekt mit allen Service-Aliases und dem jeweiligen Boolean (true/false).
+Die Statistik wertet die Tabelle `#__kickconsentmanager_consents` aus. Pro Eintrag werden die akzeptierten Kategorien und Services aus dem gespeicherten Cookie (`rawdata`) gelesen. Dort steht zum Beispiel:
 
-Beispiel:
 ```json
 {
-  "kcm": true,
-  "google-analytics": true,
-  "youtube": false,
-  "facebook-pixel": false
+  "uuid": "ad4db06d-31b4-4f38-adc3-b49e9e61c9b4",
+  "opt_in": true,
+  "serviceCategories": ["essential", "statistics"],
+  "services": ["kcm", "google-analytics"],
+  "configVersion": 1
 }
 ```
 
-Der KCM iteriert über alle Einträge im gewählten Zeitraum und zählt pro Service die Zustimmungen und Ablehnungen.
+Bei „Notwendige Cookies akzeptieren“ sind `serviceCategories` und `services` leer.
+
+::: info Seit Version 1.5
+Frühere Versionen zählten Einträge statt Besucher und kannten nur „Opt-in“ und „Opt-out“. Die Zahlen können sich daher nach dem Update ändern, siehe [Update auf 1.5](./update-1-5).
+:::
 
 ---
 
 ## Hinweise
 
-::: tip Nur aktuellste Einwilligungen
-Für aussagekräftige Statistiken empfiehlt es sich, nur Einwilligungen mit `is_latest = 1` zu zählen. So wird jeder Besucher nur einmal gezählt, selbst wenn er seine Einwilligung mehrfach geändert hat.
-:::
-
-::: warning Datenlücken nach Konfigurationsänderungen
-Wenn Sie die Cookie-Version in den Einstellungen erhöhen, beginnen Nutzer erneut zu entscheiden. Auswertungen über längere Zeiträume können Einwilligungen verschiedener Konfigurationsversionen mischen. Beachten Sie dies bei der Interpretation der Daten.
-:::
+- Sehr niedrige Zahlen insgesamt können auf technische Probleme mit dem Banner hindeuten, zum Beispiel wenn er auf bestimmten Seiten nicht angezeigt wird.
+- Eine niedrige Zustimmung für Marketing-Services ist normal und rechtlich gewollt.
+- Stark wachsende Anteile bei „Nur notwendige“ können auf eine unübersichtliche Gestaltung oder mangelndes Vertrauen hindeuten.
+- Der Zeitraum „Gesamter Zeitraum“ hängt davon ab, wie lange Sie Einwilligungen aufbewahren. Das [Task-Plugin](./plugins#task-plugin-plg-task-kickconsentmanager) löscht abgelaufene Einträge.
