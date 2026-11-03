@@ -60,3 +60,8 @@ Das **Backward-Compatibility-Plugin** von Joomla 6 wird nicht mehr benötigt. Au
 ## Entfernt
 
 - Die Konfigurationsoption `publicPath` im Banner-Script. Sie war ein Relikt des alten Build-Systems und wird nicht mehr ausgewertet.
+- Ab **1.5.1**: das alte Plugin **„Installer - Kicktemp“** (`plg_installer_kicktemp`). Ältere Pakete haben es mitinstalliert. Es nutzt Klassen, die es in Joomla 6 ohne Backward-Compatibility-Plugin nicht mehr gibt, und bricht dort jede Installation und jedes Update mit einem Fehler ab. Das Update auf 1.5.1 deinstalliert es automatisch. Ein dort hinterlegter Download-Key wird als Download-Key der Update-Seite übernommen, falls dort noch keiner eingetragen ist.
+
+::: warning Vor dem Upgrade auf Joomla 6
+Aktualisieren Sie den Kick Consent Manager **noch unter Joomla 5** auf 1.5.1 oder neuer und erst danach Joomla. Ist Joomla 6 bereits installiert und der Installer bricht mit `Class "JPlugin" not found` ab, löschen Sie per FTP den Ordner `plugins/installer/kicktemp` und installieren Sie anschließend das Paket 1.5.1. Das Update entfernt dann auch den verbliebenen Eintrag in der Datenbank.
+:::
