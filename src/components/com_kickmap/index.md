@@ -1,5 +1,16 @@
 # KickMap
 
+<p class="km-logo">
+  <img class="km-light" src="./assets/kickmap-logo-claim.svg" alt="KickMap – Store Locator for Joomla" width="560">
+  <img class="km-dark" src="./assets/kickmap-logo-claim-invers.svg" alt="KickMap – Store Locator for Joomla" width="560">
+</p>
+
+<style>
+.km-logo .km-dark { display: none; }
+.dark .km-logo .km-light { display: none; }
+.dark .km-logo .km-dark { display: inline; }
+</style>
+
 KickMap ist eine Standortkarte für **Joomla 5.4+ und Joomla 6** (PHP 8.1+). Du pflegst Standorte mit Adresse, Kontaktdaten und Öffnungszeiten und zeigst sie im Frontend auf einer Karte mit Liste, Filtern und Umkreissuche an.
 
 ## Funktionen
@@ -9,6 +20,7 @@ KickMap ist eine Standortkarte für **Joomla 5.4+ und Joomla 6** (PHP 8.1+). Du 
 - **Umkreissuche:** Adresse oder PLZ eingeben oder „Mein Standort“ nutzen. Suchpunkt und Umkreis werden auf der Karte gezeichnet (beides abschaltbar).
 - **Filter mit Trefferzahlen:** Suche, Kategorie, Tag, „Jetzt geöffnet“, hervorgehoben und Custom Fields – wahlweise als Live-Filter ohne Neuladen.
 - **Joomla-Standard:** Kategorien (verschachtelt), Tags, Custom Fields, Mehrsprachigkeit mit Assoziationen, Workflows, Versionen, Smart Search, Schema.org (`LocalBusiness`), Web Services API, Berechtigungen.
+- **Import & Export:** Standorte per CSV aus Excel oder anderen Systemen importieren, aktualisieren und exportieren, mit Testlauf, siehe [Import & Export](./import-export).
 - **Geocoding:** Koordinaten per Klick aus der Adresse – über Nominatim (OpenStreetMap) oder Google, mit Cache.
 - **Modul und YOOtheme Pro:** Kartenmodul für beliebige Positionen, Builder-Elemente „KickMap Map“ und „KickMap Filter“ sowie dynamische Inhalte für YOOtheme-Templates.
 - **Datenschutz:** Leaflet und Marker-Clustering sind lokal eingebunden, Karten können erst nach Zustimmung geladen werden.

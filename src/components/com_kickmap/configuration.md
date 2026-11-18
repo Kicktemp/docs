@@ -13,7 +13,7 @@ Die Optionen findest du unter **Komponenten → KickMap → Optionen**. Viele Ei
 | Points of Interest ausblenden | Ja | Blendet Geschäfte/Sehenswürdigkeiten von Google aus (nur ohne Map-ID) |
 | Kachel-Server (Leaflet) | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | Eigener Kachel-Server, z. B. ein selbst gehosteter oder ein kommerzieller Anbieter |
 | Quellenangabe der Kacheln | © OpenStreetMap | Pflichtangabe des Kachel-Anbieters |
-| Karte erst nach Zustimmung laden | Nein | Zwei-Klick-Lösung, siehe [Datenschutz](./privacy) |
+| Karte erst nach Zustimmung laden | Ja | Zwei-Klick-Lösung, siehe [Datenschutz](./privacy) |
 | Hinweistext | – | Text des Zustimmungshinweises (leer = Standardtext) |
 | Breitengrad/Längengrad Kartenmitte, Zoom | Deutschland, 6 | Ansicht, wenn keine Standorte vorhanden sind |
 | Zoom Detailseite | 15 | Zoom bei einem einzelnen Standort |
@@ -63,8 +63,9 @@ Das Geocoding wird für „Adresse suchen“ im Backend und für die Umkreissuch
 | „Mein Standort“ anbieten | Ja | Umkreissuche mit der Browser-Ortung |
 | Suchpunkt anzeigen | Ja | Marker am Suchort |
 | Umkreis als Kreis anzeigen | Ja | Kreis mit dem Suchradius; Farbe einstellbar |
-| Umkreis-Optionen (km) | `10,25,50,100,250` | Auswahl im Filter |
-| Standard-Umkreis (km) | 50 | |
+| Entfernungseinheit | Kilometer | Kilometer (km) oder Meilen (mi), gilt für Umkreis, Umkreis-Optionen und Entfernungsangaben. Pro Menüeintrag überschreibbar. |
+| Umkreis-Optionen | `10,25,50,100,250` | Auswahl im Filter, in der gewählten Einheit |
+| Standard-Umkreis | 50 | In der gewählten Einheit |
 | Karte anzeigen / Liste anzeigen | Ja / Ja | |
 | Sortierung | Reihenfolge | Reihenfolge, Titel, PLZ, Ort, Hervorgehobene zuerst. Bei einer Umkreissuche wird nach Entfernung sortiert. |
 | Anzahl, Seitenzahlen | 24 | |

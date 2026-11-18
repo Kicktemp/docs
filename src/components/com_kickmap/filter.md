@@ -24,6 +24,8 @@ Mit **Live-Filter** aktualisieren sich Karte und Liste beim Ändern eines Filter
 2. KickMap ermittelt die Koordinaten (Geocoding) und zeigt nur Standorte im Umkreis, **sortiert nach Entfernung**. Die Karten zeigen die Entfernung an.
 3. Auf der Karte erscheinen der **Suchpunkt** und ein **Kreis** mit dem Umkreis; die Karte zoomt auf den Kreis.
 
+Entfernungen, Umkreis-Auswahl und Kreis nutzen die **Entfernungseinheit** aus den Optionen: Kilometer oder Meilen. Sie lässt sich pro Menüeintrag überschreiben, z. B. für eine englischsprachige Standortseite in Meilen.
+
 Suchpunkt und Kreis sind über die Optionen „Suchpunkt anzeigen“ und „Umkreis als Kreis anzeigen“ abschaltbar, die Farbe ist einstellbar.
 
 ## URL-Parameter

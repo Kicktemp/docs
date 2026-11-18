@@ -3,6 +3,7 @@
   "items": [
     { "text": "Einführung", "link": "/components/com_kickmap/" },
     { "text": "Installation & Erste Schritte", "link": "/components/com_kickmap/getting-started" },
+    { "text": "Updates & Lizenz", "link": "/components/com_kickmap/updates" },
     { "text": "Update von KickMap 1.x (Joomla 3)", "link": "/components/com_kickmap/migration" },
     {
       "text": "Inhalte verwalten",
@@ -10,6 +11,7 @@
         { "text": "Standorte", "link": "/components/com_kickmap/locations" },
         { "text": "Öffnungszeiten", "link": "/components/com_kickmap/opening-hours" },
         { "text": "Kategorien, Tags & Felder", "link": "/components/com_kickmap/categories-tags-fields" },
+        { "text": "Import & Export (CSV)", "link": "/components/com_kickmap/import-export" },
         { "text": "Mehrsprachigkeit, Workflow & Versionen", "link": "/components/com_kickmap/multilingual-workflow" }
       ]
     },
@@ -33,6 +35,6 @@
         { "text": "Datenschutz", "link": "/components/com_kickmap/privacy" }
       ]
     },
-    { "text": "Entwicklung", "link": "/components/com_kickmap/development" }
+    { "text": "Logo & Medien", "link": "/components/com_kickmap/media" }
   ]
 }

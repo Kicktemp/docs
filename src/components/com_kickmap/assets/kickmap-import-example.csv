@@ -1,0 +1,3 @@
+title;street;zipcode;city;country;phone;email;website;category;tags;lat;lng
+Filiale Hamburg;Mönckebergstraße 1;20095;Hamburg;Deutschland;040 123456;hamburg@example.com;https://example.com;Norddeutschland/Hamburg;Elektroauto Laden|Neu;53,5511;9,9937
+Filiale Bremen;Obernstraße 2;28195;Bremen;Deutschland;0421 123456;bremen@example.com;;Norddeutschland;;;

@@ -58,3 +58,23 @@ Unbekannte Pfade liefern einen 404-Fehler.
 Die Detailseite zeigt Bild, Adresse, Kontaktdaten, Karte, Routenplaner-Link, Öffnungsstatus, Öffnungszeiten mit Sonderöffnungszeiten, Beschreibung, Galerie, Links, Ansprechpartner, Tags, Custom Fields und den Kontaktbereich. Jeder Bereich ist ein eigenes Layout und kann per [Template-Override](./overrides) angepasst werden.
 
 Für Suchmaschinen gibt KickMap strukturierte Daten nach Schema.org aus (Typ einstellbar, inkl. Adresse, Geo-Koordinaten und `openingHoursSpecification`).
+
+## Viele Standorte
+
+Die Karte zeigt alle Standorte der aktuellen Filter, die Liste darunter nur eine Seite davon. KickMap ist auf große
+Bestände ausgelegt. Gemessen auf einer Testinstallation (Joomla 6, PHP 8.3, eine Seite mit Standortliste und zwei
+Kartenmodulen, Öffnungszeiten für alle Standorte):
+
+| Standorte | Seite (unkomprimiert / komprimiert) | Serverzeit |
+|---|---|---|
+| 5.000 | ca. 1,8 MB / 250 KB | ca. 0,7 s |
+| 10.000 | ca. 3,6 MB / 450 KB | ca. 1,3 s |
+
+Die Marker werden geclustert, der Browser bleibt dabei flüssig. Für sehr viele Standorte:
+
+- **Komprimierung** im Webserver (gzip/Brotli) oder in Joomla (**System → Konfiguration → Server → Gzip-Komprimierung**)
+  aktivieren. Die Kartendaten schrumpfen dabei auf etwa ein Siebtel.
+- Kartenmodule mit **allen** Standorten nicht zusätzlich auf der Standortseite anzeigen: Jede Karte enthält die
+  Markerdaten selbst.
+- Öffnungszeiten über **Vorlagen** pflegen: Standorte mit gleichen Öffnungszeiten teilen sich die Daten auf der Karte.
+- Mit **Live-Filter** werden beim Filtern nur die Daten nachgeladen, ohne die Seite neu aufzubauen.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1296.82" height="1469.95" viewBox="0 0 1296.82 1469.95">
+<defs>
+    <linearGradient id="c" data-name="Unbenannter Verlauf 3" x1="-24.64" y1="3008.41" x2="-888.28" y2="1997.04" gradientTransform="translate(-1903.3891 320.4164) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#33b0da"/>
+      <stop offset=".5" stop-color="#3a64ab"/>
+      <stop offset="1" stop-color="#53378d"/>
+    </linearGradient>
+  </defs><path d="M0,413.2v643.55c0,32.67,17.43,62.86,45.72,79.2l556.93,321.73c28.31,16.36,63.2,16.36,91.51,0l556.94-321.73c28.29-16.34,45.72-46.53,45.72-79.2V413.2c0-32.67-17.43-62.86-45.72-79.2L694.16,12.27c-28.31-16.36-63.2-16.36-91.51,0L45.72,334C17.43,350.34,0,380.53,0,413.2Z" fill="url(#c)"/><polygon points="298,700 498,630 798,700 998,630 998,1015 798,1085 498,1015 298,1085" fill="none" stroke="#fff" stroke-width="42" stroke-linejoin="round" stroke-linecap="round"/><line x1="498" y1="630" x2="498" y2="1015" fill="none" stroke="#fff" stroke-width="42" stroke-linejoin="round" stroke-linecap="round"/><line x1="798" y1="700" x2="798" y2="1085" fill="none" stroke="#fff" stroke-width="42" stroke-linejoin="round" stroke-linecap="round"/><path d="M648,930C596,862 483,752 483,595A165,165 0 1 1 813,595C813,752 700,862 648,930Z" fill="url(#c)" stroke="#fff" stroke-width="42" stroke-linejoin="round"/><circle cx="648" cy="595" r="58" fill="none" stroke="#fff" stroke-width="42" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

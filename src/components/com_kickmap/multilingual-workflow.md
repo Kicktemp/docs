@@ -11,6 +11,21 @@ KickMap folgt dem Joomla-Standard für mehrsprachige Seiten:
 
 Voraussetzung sind die Plugins „System – Sprachenfilter“ (mit „Zuordnungen“ aktiviert) und Inhaltssprachen.
 
+### Einrichtung in Kürze
+
+1. Inhaltssprachen veröffentlichen, z. B. Deutsch (`de`) und Englisch (`en`), und „System – Sprachenfilter“ mit „Zuordnungen“ aktivieren.
+2. Pro Sprache ein Menü mit einer eigenen Startseite anlegen, zusätzlich eine Startseite für „Alle“ (z. B. in einem versteckten Menü).
+3. Die Menüeinträge der Sprachen miteinander verknüpfen (Tab „Assoziationen“) und das Modul „Sprachauswahl“ veröffentlichen.
+4. Kategorien und Standorte übersetzen und verknüpfen. Standorte mit der Sprache „Alle“ erscheinen in jeder Sprache.
+
+**Tipp:** Die Entfernungseinheit lässt sich pro Menüeintrag setzen. Die englische Standortseite kann also Meilen nutzen und die deutsche Kilometer.
+
+### Custom Fields übersetzen
+
+Beschriftungen und Optionen von Custom Fields werden wie im Joomla-Core übersetzt. Trage als Beschriftung bzw. Optionstext eine
+Sprachkonstante ein, z. B. `MYSITE_FIELD_PAYMENT`, und lege sie unter **System → Sprachen → Overrides** für jede Sprache an.
+Das gilt auch für die Feldfilter in der Standortliste.
+
 ## Workflow
 
 Workflows schaltest du unter **Optionen → Integration → Workflows** ein. Bei der Installation wurde dafür der **Basic-Workflow** für Standorte angelegt.
