@@ -17,10 +17,11 @@ Unter **Builder → Templates** gibt es drei Template-Typen:
 **Seite** (im passenden Template):
 
 - *Location* – der aktuelle Standort,
-- *Locations* – die gefilterten Standorte der aktuellen Liste (mit Start/Anzahl) und ihre Gesamtzahl,
+- *Standorte* – die gefilterten Standorte der aktuellen Liste (mit Start/Anzahl),
+- *KickMap Liste* – Angaben zur aktuellen Liste, z. B. die Anzahl der gefundenen Standorte,
 - *Category* – die aktuelle Kategorie.
 
-**Benutzerdefiniert** (auf jeder Seite): *KickMap Locations* mit Kategorien, Tags, „Jetzt geöffnet“, „Nur hervorgehobene“ und Anzahl.
+**Benutzerdefiniert** (auf jeder Seite): *KickMap Standorte* mit Kategorien, Tags, „Jetzt geöffnet“, „Nur hervorgehobene“ und Anzahl.
 
 Felder eines Standorts:
 
@@ -40,10 +41,8 @@ Felder eines Standorts:
 
 Eine Karte mit Standorten.
 
-- **Standorte:** *Seite* (die gefilterten Standorte der aktuellen KickMap-Liste) oder *Auswahl* (Kategorien, Tags, Anzahl).
+- **Standorte:** *Seite* (die gefilterten Standorte der aktuellen KickMap-Liste, im Template „KickMap Location“ der aktuelle Standort) oder *Auswahl* (Kategorien, Tags, Anzahl).
 - **Kartenanbieter**, **Höhe**, **Zoom** und **Marker gruppieren** – leer bedeutet Optionen der Komponente.
-
-Auf einer Listen-Seite reagiert die Karte auf den Live-Filter.
 
 ### KickMap Filter
 
@@ -53,5 +52,12 @@ Das Filterformular als eigenes Element, z. B. in einer Seitenleiste.
 - **Ziel-Menüpunkt:** Auf anderen Seiten (z. B. Startseite) sendet das Formular an diesen KickMap-Menüpunkt.
 
 ::: tip Liste selbst gestalten
-Lege für „KickMap Locations“ ein Template mit *KickMap Filter*, *KickMap Map* und einem Grid an, dessen Quelle *Locations* (Seite) ist. Der Live-Filter aktualisiert Karte und Grid.
+Lege für „KickMap Locations“ ein Template mit *KickMap Filter*, *KickMap Karte* (Quelle: Seite) und einem Grid an, dessen Quelle *Standorte* (Seite) ist. Für die Trefferzahl nutzt du eine Überschrift mit der Quelle *KickMap Liste → Anzahl der Standorte*.
+
+Beim Filtern lädt die Seite neu, weil der Builder Grid und Karte auf dem Server rendert. Der Live-Filter ohne Neuladen gilt nur für die Standardausgabe der Komponente.
 :::
+
+## Voraussetzungen
+
+- YOOtheme Pro 5 (getestet mit 5.0.56)
+- Die Builder-Oberfläche ist auf Deutsch und Englisch übersetzt.

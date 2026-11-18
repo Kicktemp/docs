@@ -14,6 +14,12 @@ Unter **Menüs → Neuer Menüeintrag → Menüeintragstyp → KickMap**:
 
 Die Listen-Menüpunkte haben im Tab **Liste & Filter** dieselben Einstellungen wie die [Optionen](./configuration#liste-filter) – leer bedeutet „Globale Einstellung verwenden“. Zusätzlich gibt es eine Überschrift, einen Einleitungstext und einen eigenen Kartenanbieter.
 
+### Anzahl pro Seite
+
+Wie viele Standorte pro Seite erscheinen, stellst du am Menüpunkt im Feld **Anzahl** ein (Standorte, Standorte einer Kategorie, Hervorgehobene Standorte). Leer übernimmt den Wert aus den Optionen (Standard 24), `0` zeigt alle Standorte ohne Seitenaufteilung. Die Karte zeigt immer alle Treffer, nicht nur die der aktuellen Seite.
+
+Besucher können die Anzahl nicht per URL (`?limit=`) ändern. Die Seitenlinks enthalten die aktiven Filter, gefilterte Seiten lassen sich daher teilen und von Suchmaschinen korrekt aufrufen.
+
 ## URLs
 
 Mit aktiviertem URL-Rewrite (globale Konfiguration und `.htaccess`) erzeugt KickMap sprechende URLs:
