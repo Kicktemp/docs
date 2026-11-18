@@ -4,7 +4,6 @@
     { "text": "Einführung", "link": "/components/com_kickmap/" },
     { "text": "Installation & Erste Schritte", "link": "/components/com_kickmap/getting-started" },
     { "text": "Updates & Lizenz", "link": "/components/com_kickmap/updates" },
-    { "text": "Update von KickMap 1.x (Joomla 3)", "link": "/components/com_kickmap/migration" },
     {
       "text": "Inhalte verwalten",
       "items": [

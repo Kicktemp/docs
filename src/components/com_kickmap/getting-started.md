@@ -8,7 +8,7 @@
 
 ::: tip Installation per Kommandozeile
 ```bash
-php cli/joomla.php extension:install --path=/absoluter/pfad/pkg_kickmap_2.0.0.zip
+php cli/joomla.php extension:install --path=/absoluter/pfad/pkg_kickmap_1.0.0.zip
 ```
 Der Pfad muss absolut sein, relative Pfade schlagen fehl.
 :::
@@ -19,7 +19,6 @@ Bei der Installation passiert außerdem:
 - für Standorte wird ein **Basic-Workflow** angelegt (genutzt nur, wenn du Workflows aktivierst),
 - die Inhaltstypen für Tags, Versionen und Smart Search werden registriert,
 - ein altes Plugin „Installer – Kicktemp“ wird entfernt,
-- Daten einer KickMap-Version für Joomla 3 werden übernommen, siehe [Update von KickMap 1.x](./migration).
 
 ## Erste Schritte
 
