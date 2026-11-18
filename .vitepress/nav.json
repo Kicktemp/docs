@@ -18,5 +18,10 @@
         "text": "KickBannerStats",
         "link": "/components/com_kickbannerstats/",
         "activeMatch": "/components/com_kickbannerstats/"
+    },
+    {
+        "text": "KickMap",
+        "link": "/components/com_kickmap/",
+        "activeMatch": "/components/com_kickmap/"
     }
 ]

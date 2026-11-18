@@ -1,0 +1,38 @@
+{
+  "text": "KickMap",
+  "items": [
+    { "text": "Einführung", "link": "/components/com_kickmap/" },
+    { "text": "Installation & Erste Schritte", "link": "/components/com_kickmap/getting-started" },
+    { "text": "Update von KickMap 1.x (Joomla 3)", "link": "/components/com_kickmap/migration" },
+    {
+      "text": "Inhalte verwalten",
+      "items": [
+        { "text": "Standorte", "link": "/components/com_kickmap/locations" },
+        { "text": "Öffnungszeiten", "link": "/components/com_kickmap/opening-hours" },
+        { "text": "Kategorien, Tags & Felder", "link": "/components/com_kickmap/categories-tags-fields" },
+        { "text": "Mehrsprachigkeit, Workflow & Versionen", "link": "/components/com_kickmap/multilingual-workflow" }
+      ]
+    },
+    { "text": "Konfiguration", "link": "/components/com_kickmap/configuration" },
+    {
+      "text": "Frontend",
+      "items": [
+        { "text": "Menüpunkte & URLs", "link": "/components/com_kickmap/frontend" },
+        { "text": "Filter & Umkreissuche", "link": "/components/com_kickmap/filter" },
+        { "text": "Modul KickMap – Karte", "link": "/components/com_kickmap/module" },
+        { "text": "YOOtheme Pro", "link": "/components/com_kickmap/yootheme" },
+        { "text": "Template-Overrides", "link": "/components/com_kickmap/overrides" }
+      ]
+    },
+    {
+      "text": "Integration",
+      "items": [
+        { "text": "Smart Search", "link": "/components/com_kickmap/smart-search" },
+        { "text": "Web Services API", "link": "/components/com_kickmap/api" },
+        { "text": "JavaScript & Consent", "link": "/components/com_kickmap/javascript-api" },
+        { "text": "Datenschutz", "link": "/components/com_kickmap/privacy" }
+      ]
+    },
+    { "text": "Entwicklung", "link": "/components/com_kickmap/development" }
+  ]
+}

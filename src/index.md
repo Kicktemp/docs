@@ -27,6 +27,12 @@ features:
     link: /components/com_kickbannerstats/
     linkText: Dokumentation lesen
 
+  - icon: 📍
+    title: KickMap
+    details: Standortkarte für Joomla 5 & 6 mit Leaflet oder Google Maps, Öffnungszeiten mit „Jetzt geöffnet“, Umkreissuche, Filtern und YOOtheme-Pro-Elementen.
+    link: /components/com_kickmap/
+    linkText: Dokumentation lesen
+
   - icon: 🎨
     title: Kick YOOaddons
     details: Leistungsstarke Plugin-Sammlung für den YOOtheme Pro Page Builder. Über 200 Projekte Erfahrung in einer Erweiterung – für Agenturen und Entwickler.
