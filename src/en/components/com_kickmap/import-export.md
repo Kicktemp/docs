@@ -74,4 +74,4 @@ Each row is validated and saved just like when saving in the backend:
 ### Coordinates
 
 Rows without `lat`/`lng` are saved without coordinates and do not appear on the map yet. Afterwards, determine them
-in the location list with **Geocode missing coordinates** (25 locations per click, see [Locations](./locations)).
+in the location list with **Geocode missing coordinates** (up to 25 locations or 20 seconds per click, the message shows how many are still missing; see [Locations](./locations)).

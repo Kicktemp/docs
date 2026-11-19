@@ -8,9 +8,11 @@ Under **Builder → Templates** there are three template types:
 
 | Template | Page | Restrictions |
 |---|---|---|
-| KickMap Locations | Menu items "Locations" and "Featured locations" | Pages (first / others), language |
-| KickMap Category | Menu item "Locations of a category" | Category, pages, language |
+| KickMap Locations | Menu items "Locations" and "Featured locations" | Menu items, pages (first / others), language |
+| KickMap Category | Menu item "Locations of a category" | Category, menu items, pages, language |
 | KickMap Location | Detail page of a location | Category, tag, language |
+
+With **Limit by Menu Items** a template only applies to certain KickMap menu items, e.g. a builder layout for "Store Finder" while "Locations" keeps the default output.
 
 ## Dynamic Content
 
