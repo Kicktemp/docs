@@ -26,7 +26,7 @@ Bei der Installation passiert außerdem:
 2. **Kategorien anlegen** (optional) – z. B. Regionen oder Filialarten. Kategorien können verschachtelt werden und eine eigene Markerfarbe bzw. ein eigenes Marker-Bild bekommen.
 3. **Standorte anlegen** – Titel, Adresse, dann im Kartenfeld **Adresse suchen** klicken oder den Marker auf der Karte verschieben. Siehe [Standorte](./locations).
 4. **Öffnungszeiten pflegen** – direkt am Standort oder über eine Vorlage. Siehe [Öffnungszeiten](./opening-hours).
-5. **Menüpunkt anlegen** – **Menüs → Neuer Menüeintrag → KickMap → Standorte (Karte & Liste)**. Siehe [Menüpunkte & URLs](./frontend).
+5. **Menüpunkt anlegen** – **Menüs → Neuer Menüeintrag → KickMap → Standorte (Karte, Filter und Liste)**. Siehe [Menüpunkte & URLs](./frontend).
 
 ::: tip Suchmaschinenfreundliche URLs
 Damit URLs wie `/standorte/hamburg/filiale-hamburg` funktionieren, aktiviere in der globalen Konfiguration „URL-Rewrite nutzen“ und benenne `htaccess.txt` in `.htaccess` um.

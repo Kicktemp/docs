@@ -1,0 +1,39 @@
+{
+  "text": "KickMap",
+  "items": [
+    { "text": "Introduction", "link": "/en/components/com_kickmap/" },
+    { "text": "Installation & First Steps", "link": "/en/components/com_kickmap/getting-started" },
+    { "text": "Updates & License", "link": "/en/components/com_kickmap/updates" },
+    {
+      "text": "Managing Content",
+      "items": [
+        { "text": "Locations", "link": "/en/components/com_kickmap/locations" },
+        { "text": "Opening Hours", "link": "/en/components/com_kickmap/opening-hours" },
+        { "text": "Categories, Tags & Fields", "link": "/en/components/com_kickmap/categories-tags-fields" },
+        { "text": "Import & Export (CSV)", "link": "/en/components/com_kickmap/import-export" },
+        { "text": "Multilingual, Workflow & Versions", "link": "/en/components/com_kickmap/multilingual-workflow" }
+      ]
+    },
+    { "text": "Configuration", "link": "/en/components/com_kickmap/configuration" },
+    {
+      "text": "Frontend",
+      "items": [
+        { "text": "Menu Items & URLs", "link": "/en/components/com_kickmap/frontend" },
+        { "text": "Filters & Radius Search", "link": "/en/components/com_kickmap/filter" },
+        { "text": "Module KickMap – Map", "link": "/en/components/com_kickmap/module" },
+        { "text": "YOOtheme Pro", "link": "/en/components/com_kickmap/yootheme" },
+        { "text": "Template Overrides", "link": "/en/components/com_kickmap/overrides" }
+      ]
+    },
+    {
+      "text": "Integration",
+      "items": [
+        { "text": "Smart Search", "link": "/en/components/com_kickmap/smart-search" },
+        { "text": "Web Services API", "link": "/en/components/com_kickmap/api" },
+        { "text": "JavaScript & Consent", "link": "/en/components/com_kickmap/javascript-api" },
+        { "text": "Privacy", "link": "/en/components/com_kickmap/privacy" }
+      ]
+    },
+    { "text": "Logo & Media", "link": "/en/components/com_kickmap/media" }
+  ]
+}

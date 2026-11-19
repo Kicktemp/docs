@@ -8,9 +8,11 @@ Unter **Builder → Templates** gibt es drei Template-Typen:
 
 | Template | Seite | Einschränkungen |
 |---|---|---|
-| KickMap Locations | Menüpunkte „Standorte“ und „Hervorgehobene Standorte“ | Seiten (erste / weitere), Sprache |
-| KickMap Category | Menüpunkt „Standorte einer Kategorie“ | Kategorie, Seiten, Sprache |
+| KickMap Locations | Menüpunkte „Standorte“ und „Hervorgehobene Standorte“ | Menüeinträge, Seiten (erste / weitere), Sprache |
+| KickMap Category | Menüpunkt „Standorte einer Kategorie“ | Kategorie, Menüeinträge, Seiten, Sprache |
 | KickMap Location | Detailseite eines Standorts | Kategorie, Tag, Sprache |
+
+Mit **Auf Menüeinträge beschränken** gilt ein Template nur für bestimmte KickMap-Menüpunkte, z. B. ein Builder-Layout für „Store Finder“, während „Standorte“ die Standardausgabe behält.
 
 ## Dynamische Inhalte
 

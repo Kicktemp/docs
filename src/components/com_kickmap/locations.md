@@ -8,7 +8,7 @@ Standorte verwaltest du unter **Komponenten → KickMap → Standorte**. Die Lis
 
 ## Standort bearbeiten
 
-### Tab „Standort“
+### Tab „Details“
 
 | Bereich | Felder |
 |---|---|

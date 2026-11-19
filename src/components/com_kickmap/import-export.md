@@ -75,4 +75,4 @@ Jede Zeile wird wie beim Speichern im Backend geprüft und gespeichert:
 ### Koordinaten
 
 Zeilen ohne `lat`/`lng` werden ohne Koordinaten gespeichert und erscheinen noch nicht auf der Karte. Ermittle sie danach
-in der Standortliste mit **Fehlende Koordinaten ermitteln** (25 Standorte pro Klick, siehe [Standorte](./locations)).
+in der Standortliste mit **Fehlende Koordinaten ermitteln** (bis zu 25 Standorte bzw. 20 Sekunden pro Klick, die Meldung zeigt, wie viele noch fehlen; siehe [Standorte](./locations)).

@@ -48,8 +48,7 @@ Gibt es keinen Menüpunkt „Standorte“ (er darf auch in einem versteckten Men
 Abweichende Schreibweisen werden per **301** auf die richtige URL umgeleitet:
 
 - URLs mit ID (`/standorte/hamburg/1-filiale-hamburg`), wenn „IDs aus URLs entfernen“ aktiv ist,
-- `/component/kickmap/…`-URLs,
-- alte URLs der Joomla-3-Version (`/standorte/item/1-filiale-hamburg`).
+- `/component/kickmap/…`-URLs.
 
 Unbekannte Pfade liefern einen 404-Fehler.
 
