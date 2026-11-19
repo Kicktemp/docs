@@ -1,0 +1,16 @@
+[
+    {
+        "text": "KickMap",
+        "link": "/en/components/com_kickmap/",
+        "activeMatch": "/en/components/com_kickmap/"
+    },
+    {
+        "text": "German only",
+        "items": [
+            { "text": "Kick YOOaddons", "link": "/kicktemp-addons-for-yootheme-pro/" },
+            { "text": "Plugins", "link": "/plugins/" },
+            { "text": "Kick Consent Manager", "link": "/components/com_kickconsentmanager/" },
+            { "text": "KickBannerStats", "link": "/components/com_kickbannerstats/" }
+        ]
+    }
+]
