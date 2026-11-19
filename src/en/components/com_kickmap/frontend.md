@@ -48,8 +48,7 @@ If there is no "Locations" menu item (it may also be in a hidden menu), Joomla g
 Different spellings are redirected to the correct URL with a **301**:
 
 - URLs with an ID (`/standorte/hamburg/1-filiale-hamburg`) if "Remove IDs from URLs" is enabled,
-- `/component/kickmap/…` URLs,
-- old URLs of the Joomla 3 version (`/standorte/item/1-filiale-hamburg`).
+- `/component/kickmap/…` URLs.
 
 Unknown paths return a 404 error.
 
