@@ -13,7 +13,7 @@ Süddeutschland
 ```
 
 - Jeder Standort gehört zu genau einer Kategorie.
-- Im Tab **KickMap** einer Kategorie legst du **Markerfarbe** und **Marker-Bild** fest – alle Standorte direkt in dieser Kategorie bekommen diesen Marker. Unterkategorien erben ihn nicht, sie brauchen einen eigenen.
+- Im Tab **KickMap** einer Kategorie legst du **Marker-Form**, **Marker-Bild**, **Markerfarbe** und **Farben austauschen** fest ([Marker](./locations.md#marker)) – alle Standorte direkt in dieser Kategorie bekommen diesen Marker. Unterkategorien erben ihn nicht, sie brauchen einen eigenen.
 - Filter und Menüpunkte nach Kategorie schließen **Unterkategorien ein**.
 - Kategorien bekommen eigene Menüpunkte (**Standorte einer Kategorie**) und eigene URLs, siehe [Menüpunkte & URLs](./frontend).
 

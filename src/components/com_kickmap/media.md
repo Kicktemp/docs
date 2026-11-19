@@ -5,6 +5,36 @@ description: Logo, Icon und Video von KickMap zum Download
 
 # Logo & Medien
 
+## Videos
+
+### KickMap in 60 Sekunden
+
+<video class="km-video" controls preload="metadata" poster="./assets/kickmap-1-0-16x9-de.jpg">
+  <source src="./assets/kickmap-1-0-16x9-de.mp4" type="video/mp4">
+</video>
+
+Überblick: Karte mit OpenStreetMap oder Google Maps, Filter und Umkreissuche, Öffnungszeiten, CSV-Import, Mehrsprachigkeit, Joomla-Standard und YOOtheme Pro.
+<details>
+<summary>English version</summary>
+<video class="km-video" controls preload="none" poster="./assets/kickmap-1-0-16x9-en.jpg">
+  <source src="./assets/kickmap-1-0-16x9-en.mp4" type="video/mp4">
+</video>
+</details>
+
+### KickMap im Backend
+
+<video class="km-video" controls preload="metadata" poster="./assets/kickmap-backend-16x9-de.jpg">
+  <source src="./assets/kickmap-backend-16x9-de.mp4" type="video/mp4">
+</video>
+
+Kleine Werkzeuge im Alltag: Adresse beim Ablegen des Markers, Karte in der Standortliste (Hover und Doppelklick) und eigene Pins pro Kategorie.
+<details>
+<summary>English version</summary>
+<video class="km-video" controls preload="none" poster="./assets/kickmap-backend-16x9-en.jpg">
+  <source src="./assets/kickmap-backend-16x9-en.mp4" type="video/mp4">
+</video>
+</details>
+
 ## Logo
 
 <p class="km-logo">
@@ -13,6 +43,7 @@ description: Logo, Icon und Video von KickMap zum Download
 </p>
 
 <style>
+.km-video { width: 100%; border-radius: 12px; margin: 8px 0 4px; background: #000; }
 .km-logo .km-dark { display: none; }
 .dark .km-logo .km-light { display: none; }
 .dark .km-logo .km-dark { display: inline; }

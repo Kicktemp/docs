@@ -34,8 +34,10 @@ Die Optionen findest du unter **Komponenten → KickMap → Optionen**. Viele Ei
 
 | Option | Standard | Beschreibung |
 |---|---|---|
-| Marker-Bild | – | Eigenes Bild (SVG/PNG) als Standard-Marker |
-| Standardfarbe | `#0099d9` | Farbe des mitgelieferten Markers |
+| Marker-Form | – | Mitgelieferte Form (Pin, Punkt, Stern, Einkaufstasche, Haus), eingefärbt in der Marker-Farbe |
+| Marker-Bild | – | Eigenes Bild (SVG/PNG) als Standard-Marker, hat Vorrang vor der Form. In SVGs wird `#000000` durch die Marker-Farbe ersetzt |
+| Standardfarbe | `#0099d9` | Farbe des Markers, wenn die Kategorie keine Farbe hat |
+| Farben austauschen | – | Weitere Farben in SVG-Markern tauschen, eine Zeile pro Farbe, z. B. `#444444,#ffd200` ([mehr](./locations.md#marker-formen-und-eigene-svg-marker)) |
 | Breite / Höhe | 32 / 48 px | Größe des Markers, Ankerpunkt ist unten mittig |
 | Marker-Quelle | Kategorie | „Kategorie“: Marker der Kategorie verwenden; „Standard“: immer den Standard-Marker |
 
